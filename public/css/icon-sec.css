@@ -1,0 +1,26 @@
+.center-main{
+    width: 55%;
+    padding-top: 5px;
+}
+.icon-section{
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #F8F6EF;
+    box-shadow: 2px 2px 5px #00000085;
+    border-radius: 15px;
+}
+.icon-section a{
+    text-align: center;
+}
+.icon-section a{
+    text-decoration: none;
+}
+.icon-section p{
+    font-size: 14px;
+    color: #121111;
+    font-weight: 600;
+    line-height: 25px;
+}

@@ -1,0 +1,57 @@
+
+.order .h4 {
+    background-color: #eb001b;
+    color: #ffffff;
+    padding: 0px 15px;
+    z-index: 1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.order .btn1 {
+
+    background-color: #eb001b;
+    color: white;
+    padding: 10px 40px;
+    border-radius: none;
+    border: none;
+}
+.order-columns .col-sm-4 img{
+    position: relative;
+    z-index: 1;
+}
+
+.order-columns {
+    background-color: #eb001b;
+    margin-top: -10px;
+    border-radius: 12px;
+}
+.order-columns .col-sm-4{
+    border-radius: 12px;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    margin: 15px auto;
+    width: 28%;
+}
+.order-columns .col-sm-4 {
+    height: 250px;
+    background: white;
+    position: relative;
+    
+}
+
+.order-columns .col-sm-4:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    border-top: 90px solid #eb001b;
+    border-left: 177px solid white;
+    border-radius: 8px;
+}
+.order-columns .btn{
+    color: #eb001b;
+}
+.order-columns p i{
+    color: gold;
+}
