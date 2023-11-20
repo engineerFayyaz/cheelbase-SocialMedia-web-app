@@ -6,98 +6,32 @@ const Stories = () => {
       <div className="col-6 center-main">
         {/* /// stories main starts  */}
         <div className="container-fluid stories-main">
+        <div className="stories"  style={{color:"white"}}> Your Stories Content Goes Here</div>
           <div className="stories-container">
-            <div className="content">
-              <div className="previous-btn">
-                {/* <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M15.75 19.5L8.25 12l7.5-7.5"
-                  />
-                </svg> */}
-                <img src="public/images/+10.png"/>
+            <div className="content" style={{margin:"5px"}}>
+              <img src="/images/story.png" />
+              <img src="/images/story.png" />
+              <img src="/images/story.png" />
+              <img src="/images/story.png" />
+              <img src="/images/story.png" />
 
-              </div>
-              <div className="stories">Your Stories Content Goes Here</div>
-              <div className="next-btn active">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                  />
-                </svg>
-              </div>
+
             </div>
+            
           </div>
           <div className="stories-full-view">
-            <div className="close-btn">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </div>
+            
+ 
             <div className="content">
               <div className="previous-btn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M15.75 19.5L8.25 12l7.5-7.5"
-                  />
-                </svg>
+                <img src="/images/story.png" />
               </div>
               <div className="story">
                 <img src="/images/3.jpg" alt="" />
                 <div className="author">Author</div>
               </div>
               <div className="next-btn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                  />
-                </svg>
+                <img src="/images/story.png" />
               </div>
             </div>
           </div>

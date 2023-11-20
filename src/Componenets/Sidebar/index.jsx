@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -18,14 +19,14 @@ const Sidebar = () => {
                 <i className="fa-solid fa-gear" />
                 Business Tool
               </a>
-              <a className="dropdown-item" href="gallery.html">
+              <Link to="/Gallery" className="dropdown-item">
                 <i className="fa-solid fa-photo-film" />
                 Gallery
-              </a>
-              <a className="dropdown-item" href="cheels.html">
-                <i className="fa-solid fa-mobile" />
+              </Link>
+              <Link to="/Cheelzs" className="dropdown-item">
+                <i className="fa-solid fa-photo-film" />
                 Cheels
-              </a>
+              </Link>
               <a className="dropdown-item" href="video.html">
                 <i className="fa-solid fa-store" />
                 Store
