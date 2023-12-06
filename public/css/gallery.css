@@ -8,9 +8,3 @@
     width: 100%;
     border-radius: 8px;
 }
-
-@media (min-width: 768px) {
-    .col-md {
-      flex: 1 0 0%;
-    }
-  }
