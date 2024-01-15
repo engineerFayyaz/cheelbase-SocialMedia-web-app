@@ -3,7 +3,7 @@ import Sidebar from "../../Componenets/Sidebar";
 import ReelsCheelz from "../../Componenets/ReelsCheelz";
 import RightSideBar from "../../Componenets/RightSideBar";
 import Header from "../../Componenets/Header";
-
+import "../Cheelzs/cheel.css"
 
 const Cheelzs = () => {
   return (

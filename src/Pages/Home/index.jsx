@@ -7,7 +7,7 @@ import GalleryPageComp from "../../Componenets/GalleryPageComp";
 import Gallery from "../../Componenets/Gallery";
 import Properties from "../../Componenets/Properties";
 
-const HomePage =()=>{
+const Home =()=>{
     return(
         <>
         <div className="container-fliud container-width">
@@ -23,4 +23,4 @@ const HomePage =()=>{
         </>
     )
 }
-export default HomePage;
+export default Home;

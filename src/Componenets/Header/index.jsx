@@ -7,7 +7,7 @@ const Header = () => {
       <header>
   <nav className="navbar navbar-expand-sm">
     <div className="container-fluid">
-      <a className="navbar-brand" href="index.html">
+      <a className="navbar-brand" href="/Home">
         <img
           src="images/cheelbase-logo.png"
           alt=""

@@ -6,16 +6,24 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const Cheelzs =React.lazy(()=>import("./Pages/Cheelzs"));
 const Gallery = React.lazy(()=>import("./Pages/Gallery"));
-const HomePage =React.lazy(()=>import('./Pages/HomePage'))
+const Home =React.lazy(()=>import('./Pages/Home'))
+const Welcome = React.lazy(()=>import('./Pages/Welcome'))
+const QrCode = React.lazy(()=>import('./Pages/QrCode'))
+const LinkingDevice = React.lazy(()=>import('./Pages/LinkingDevice'))
+
+
 
 const ProjectRoutes =()=>{
     return(
     <React.Suspense fallback={<>Loading...</>}>
         <Router>
         <Routes>
-        <Route path="/" element={<HomePage/>}/>
+        <Route path="/Home" element={<Home/>}/>
         <Route path="/Cheelzs" element={<Cheelzs/>}/>
         <Route path="/Gallery" element={<Gallery/>}/>
+        <Route path="/" element={<Welcome/>}/>
+        <Route path="/QrCode" element={<QrCode/>}/>
+        <Route path="/LinkingDevice" element={<LinkingDevice/>}/>
         </Routes>
         </Router>
     </React.Suspense>
