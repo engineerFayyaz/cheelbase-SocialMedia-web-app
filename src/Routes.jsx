@@ -12,6 +12,7 @@ const QrCode = React.lazy(()=>import('./Pages/QrCode'));
 const LinkingDevice = React.lazy(()=>import('./Pages/LinkingDevice'));
 const Profile= React.lazy(()=>import ('./Pages/Profile'));
 const verificationProfileInformation = React.lazy(()=>import('./Pages/verificationProfileInformation'));
+const ChannelMain = React.lazy(()=> import('./Pages/ChannelMain'))
 
 
 const ProjectRoutes =()=>{
@@ -27,6 +28,7 @@ const ProjectRoutes =()=>{
         <Route path="/LinkingDevice" element={<LinkingDevice/>}/>
         <Route path="/Profile" element={<Profile/>}/>
         <Route path="/verificationProfileInformation " element={<verificationProfileInformation/>}/>
+        <Route path="/ChannelMain" element={<ChannelMain/>}/>
         </Routes>
         </Router>
     </React.Suspense>

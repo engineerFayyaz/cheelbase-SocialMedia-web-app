@@ -13,7 +13,7 @@ const ChannelMain = () => {
           <div className="col-md">
             <div className="image p-3 ">
               <img
-                src="../assets/images/Rectangle 5288.png"
+                src="../images/Rectangle 5288.png"
                 alt=""
                 width="100%"
               />
@@ -23,7 +23,7 @@ const ChannelMain = () => {
                 <h3>My Channels</h3>
                 <div className="channels-box d-flex gap-2">
                   <img
-                    src="../assets/images/Ellipse 341.png"
+                    src="../images/Ellipse 341.png"
                     width={50}
                     height={50}
                     alt=""
@@ -55,7 +55,7 @@ const ChannelMain = () => {
                 </div>
                 <div className="channels-box d-flex gap-2 my-3">
                   <img
-                    src="../assets/images/Ellipse 341.png"
+                    src="../images/Ellipse 341.png"
                     width={50}
                     height={50}
                     alt=""
@@ -87,7 +87,7 @@ const ChannelMain = () => {
                 </div>
                 <div className="channels-box d-flex gap-2 my-3">
                   <img
-                    src="../assets/images/Ellipse 341.png"
+                    src="../images/Ellipse 341.png"
                     width={50}
                     height={50}
                     alt=""
@@ -119,7 +119,7 @@ const ChannelMain = () => {
                 </div>
                 <div className="channels-box d-flex gap-2 my-3">
                   <img
-                    src="../assets/images/Ellipse 341.png"
+                    src="../images/Ellipse 341.png"
                     width={50}
                     height={50}
                     alt=""
@@ -219,7 +219,7 @@ const ChannelMain = () => {
                   >
                     <img
                       id="imagePreview"
-                      src="../assets/images/icons/photo_camera_back.png"
+                      src="../images/icons/photo_camera_back.png"
                       alt="Preview"
                       className="img-fluid"
                       style={{ width: 150 }}
@@ -236,7 +236,7 @@ const ChannelMain = () => {
                         >
                           {/* You can use an icon here, for example: */}
                           <img
-                            src="../assets/images/icons/photo_camera_back.png"
+                            src="../images/icons/photo_camera_back.png"
                             width={50}
                             alt=""
                           />
