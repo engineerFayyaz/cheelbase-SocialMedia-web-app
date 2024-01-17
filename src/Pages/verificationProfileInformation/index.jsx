@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import Header from "../../Componenets/Header";
 import "../verificationProfileInformation/verificationProfileInformation.css";
 const verificationProfileInformation =()=> {
