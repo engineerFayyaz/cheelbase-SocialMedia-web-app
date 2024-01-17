@@ -415,15 +415,17 @@ body {
 }
 
 .searchbar input {
-    background: #FBC505;
     padding: 5px;
+    padding-left: 31px;
     border-radius: 10px;
     outline: none;
     border: none;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 700;
     color: #FFFFFF;
     width: 100%;
 }
+
 
 .searchbar input::placeholder {
     color: #FFFFFF;

@@ -20,7 +20,7 @@
 .find-Channels-columns .column1{
     background: #E0E3EE;
   border-radius: 10px;
-    width: 240px;
+    width: 230px;
     text-align: center;
     padding: 48px 15px 30px 15px;
     box-shadow: 2px 2px 5px #00000057;
@@ -39,7 +39,8 @@
     font-family:  sans-serif;
 }
 .find-Channels-columns .column1 .subscribe-btn{
-    background: #fcc810;
+    background: #30146C;
+    color: white;
     border-radius: 30px;
     padding: 7px 35px;
     font-size: 12px;
