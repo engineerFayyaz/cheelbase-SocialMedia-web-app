@@ -3,7 +3,6 @@ import Header from "../../Componenets/Header";
 import Sidebar from "../../Componenets/Sidebar";
 import Stories from "../../Componenets/Stories";
 import RightSideBar from "../../Componenets/RightSideBar";
-import GalleryPageComp from "../../Componenets/GalleryPageComp";
 import Gallery from "../../Componenets/Gallery";
 import Properties from "../../Componenets/Properties";
 
