@@ -27,7 +27,7 @@ const Sidebar = () => {
             width={25}
           />
         </div>
-        <a className="dropdown-item" href="#">
+        <a className="dropdown-item" href="/VisitorProfile">
           <img
             src="images/icons/user.png"
             alt=""

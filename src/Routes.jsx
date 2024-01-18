@@ -13,6 +13,8 @@ const LinkingDevice = React.lazy(()=>import('./Pages/LinkingDevice'));
 const Profile= React.lazy(()=>import ('./Pages/Profile'));
 const verificationProfileInformation = React.lazy(()=>import('./Pages/verificationProfileInformation'));
 const ChannelMain = React.lazy(()=> import('./Pages/ChannelMain'))
+const VisitorProfile = React.lazy(()=>import('./Pages/VisitorProfile'))
+const FullVideo = React.lazy(()=>import('./Pages/FullVideo'))
 
 
 const ProjectRoutes =()=>{
@@ -29,6 +31,8 @@ const ProjectRoutes =()=>{
         <Route path="/Profile" element={<Profile/>}/>
         <Route path="/verificationProfileInformation " element={<verificationProfileInformation/>}/>
         <Route path="/ChannelMain" element={<ChannelMain/>}/>
+        <Route path="/VisitorProfile" element={<VisitorProfile/>}/>
+        <Route path="/FullVideo" element={<FullVideo/>}/>
         </Routes>
         </Router>
     </React.Suspense>
