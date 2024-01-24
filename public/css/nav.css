@@ -11,11 +11,34 @@ body {
     padding: 10px 20px;
     z-index: 1;
 }
+.camera-div{
+    list-style: none;
+}
+.videocam{
+
+    margin-left: 20px;
+}
+
+.video_chat{
+    margin-left: 5px;
+}
+
+.add_call{
+    margin-left: 15px;
+}
+
+
+.img-icon{
+    width: 20px;
+    height: 18px;
+}
+
 
 .notifications i{
     color: #FCC810;
     margin-left: 0px;
 }
+
 .dropdown-item i{
     margin-right: 12px;
 }
@@ -24,7 +47,7 @@ body {
 }
 .navbar-brand{
     color: #FCC810;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 700;
     font-family: sans-serif;
 }
@@ -41,7 +64,7 @@ body {
     font-weight: 600;
     border: none;
     outline: none;
-    padding: 3px 10px;
+    padding: 3px 5px;
 }
 .navbar .create-btn:focus{
     background: #FCC810;
@@ -55,11 +78,12 @@ body {
     border-radius: 50%;
 }
 .navbar .chat-link-item{
-    margin-left: 20px;
+    margin-left: 25px;
 }
 .navbar .chat-link-item a{
     color: white;
     font-weight: 500;
+    font-size: 14px;
 }
 .navbar .chat-link-item a span{
     color: red;
@@ -79,8 +103,8 @@ body {
     background: white;
     align-items: center;
     border-radius: 10px;
-    padding: 6px 19px;
-    padding-right: 60px;
+    padding: 6px 12px;
+    padding-right: 30px;
     gap: 10px;
 }
 
@@ -91,8 +115,20 @@ body {
     font-size: 18px;
 }
 
+.dropdown-items{
+
+    height: 90px;
+    width: 100%;
+}
+
+.lines{
+    list-style: none;
+    margin-left: 10px;
+}
+
 .lines .dropdown i{
     color: white;
+    font-size: 25px;
 }
 .dropdown-menu .wallet-items
 {
@@ -103,6 +139,7 @@ font-weight: 600;
     margin-left: 20px;
     color: #16146C;
 }
+
 .cheelbase-pro-btn button{
     background: #30146C;
     color: white;
@@ -110,4 +147,17 @@ font-weight: 600;
 .cheelbase-pro-btn button:hover{
     background: #380e92;
     color: white;
+}
+
+
+@media (max-width: 550px){
+    .navbar{
+        padding: 10px 0px;
+    }
+    .navbar .navbar-brand{
+        font-size: 22px;
+    }
+    .navbar .navbar-brand img{
+        width: 20px;
+    }
 }

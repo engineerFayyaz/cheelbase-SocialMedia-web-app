@@ -14,10 +14,17 @@
 }
 .icon-section a{
     text-align: center;
-}
-.icon-section a{
     text-decoration: none;
+    background: transparent;
+    border-radius: 50%;
+    padding: 10px;
+    width: 100px;
+    height: 108px;
 }
+.icon-section a:focus{
+    background: #ff2929;
+}
+
 .icon-section p{
     font-size: 14px;
     color: #121111;

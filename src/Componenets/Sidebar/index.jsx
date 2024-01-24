@@ -27,7 +27,7 @@ const Sidebar = () => {
             width={25}
           />
         </div>
-        <a className="dropdown-item" href="#">
+        <a className="dropdown-item" href="/VisitorProfile">
           <img
             src="images/icons/user.png"
             alt=""
@@ -36,7 +36,7 @@ const Sidebar = () => {
           />{" "}
           Profile
         </a>
-        <a className="dropdown-item" href="gallery.html">
+        <a className="dropdown-item" href="/ChannelMain">
           <img
             src="images/icons/shortcut-script-app.png"
             className="mx-3"
@@ -45,7 +45,7 @@ const Sidebar = () => {
           />
           Cheels
         </a>
-        <a className="dropdown-item" href="cheels.html">
+        <a className="dropdown-item" href="/FullVideo">
           <img
             src="images/icons/tv-monitor.png"
             alt=""

@@ -9,12 +9,15 @@
 
 }
 
-.topcheel-columns .col-sm-3 img {
-    width: 100%;
+.topcheel-columns .col-sm img {
+    width: 120px;
     border-radius: 12px;
 }
 
-.topcheel-columns .col-sm-3 p {
+.topcheel-columns .col-sm .p {
+    font-size: 13px;
+}
+.topcheel-columns .col-sm p{
     font-size: xx-small;
 }
 .channels-heading h3{
