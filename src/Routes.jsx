@@ -36,6 +36,10 @@ const Sharedscreen = React.lazy(()=>import('./Pages/Chattingpages/Sharedscreen')
 const Groupchat = React.lazy(()=>import('./Pages/Chattingpages/Groupchat'));
 const Groupchatsecond = React.lazy(()=>import('./Pages/Chattingpages/Groupchatsecond'));
 const Groupvideosecond = React.lazy(()=>import('./Pages/Chattingpages/Groupvideosecond'));
+const Businesshelp = React.lazy(()=>import('./Pages/Businessmanager/Businesshelp'));
+const Supportchat = React.lazy(()=>import('./Pages/Businessmanager/Supportchat'));
+const Businesssupport = React.lazy(()=>import('./Pages/Businessmanager/Businesssupport'));
+const Businessleader = React.lazy(()=>import('./Pages/Businessmanager/Businessleader'));
 
 
 const ProjectRoutes =()=>{
@@ -74,7 +78,11 @@ const ProjectRoutes =()=>{
         <Route path="/Groupchat" element={<Groupchat/>}/>
         <Route path="/Groupchatsecond" element={<Groupchatsecond/>}/>
         <Route path="/Groupvideosecond" element={<Groupvideosecond/>}/>
-                    
+        <Route path="/Businesshelp" element={<Businesshelp/>}/>
+        <Route path="/Supportchat" element={<Supportchat/>}/>
+        <Route path="/Businesssupport" element={<Businesssupport/>}/>
+        <Route path="/Businessleader" element={<Businessleader/>}/>
+                   
 
         </Routes>
         </Router>
