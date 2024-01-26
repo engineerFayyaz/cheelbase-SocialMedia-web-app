@@ -60,7 +60,7 @@ const Verification1=()=>{
           </p>
         </div>
         <div className="next">
-          <a href="verification.identity.html">
+          <a href="/Verificationsecond">
             <button className="btn next-button">Next</button>
           </a>
         </div>

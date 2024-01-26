@@ -47,7 +47,7 @@ const Verificationthird =()=>{
           </p>
         </div>
         <div className="next">
-          <a href="verification-video-selfie.html">
+          <a href="/Verificationfourth">
             <button className="btn next-button">Take Photo</button>
           </a>
         </div>

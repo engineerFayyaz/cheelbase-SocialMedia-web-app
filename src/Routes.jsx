@@ -40,6 +40,13 @@ const Businesshelp = React.lazy(()=>import('./Pages/Businessmanager/Businesshelp
 const Supportchat = React.lazy(()=>import('./Pages/Businessmanager/Supportchat'));
 const Businesssupport = React.lazy(()=>import('./Pages/Businessmanager/Businesssupport'));
 const Businessleader = React.lazy(()=>import('./Pages/Businessmanager/Businessleader'));
+const Marketplace = React.lazy(()=>import('./Pages/Marketplace/Marketplace'));
+const Marketstore = React.lazy(()=>import('./Pages/Marketplace/Marketstore'));
+const Marketfood = React.lazy(()=>import('./Pages/Marketplace/Marketfood'));
+const Marketproperties = React.lazy(()=>import('./Pages/Marketplace/Marketproperties'));
+const Billingplan1 = React.lazy(()=>import('./Pages/Billingplans/Billingplan1'));
+const Billingplan2 = React.lazy(()=>import('./Pages/Billingplans/Billingplan2'));
+const Analyticsdashboard = React.lazy(()=>import('./Pages/Analyticsdashboard'));
 
 
 const ProjectRoutes =()=>{
@@ -82,7 +89,14 @@ const ProjectRoutes =()=>{
         <Route path="/Supportchat" element={<Supportchat/>}/>
         <Route path="/Businesssupport" element={<Businesssupport/>}/>
         <Route path="/Businessleader" element={<Businessleader/>}/>
-                   
+        <Route path="/Marketplace" element={<Marketplace/>}/>
+        <Route path="/Marketstore" element={<Marketstore/>}/>
+        <Route path="/Marketfood" element={<Marketfood/>}/>
+        <Route path="/Marketproperties" element={<Marketproperties/>}/>
+        <Route path="/Billingplan1" element={<Billingplan1/>}/>
+        <Route path="/Billingplan2" element={<Billingplan2/>}/>
+        <Route path="/Analyticsdashboard" element={<Analyticsdashboard/>}/>
+                 
 
         </Routes>
         </Router>

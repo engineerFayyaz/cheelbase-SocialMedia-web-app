@@ -43,7 +43,7 @@ const Verificationid = () => {
             <p className="photo-confirmation">ID FRONT</p>
             <div className="registeration">
               <img
-                src="../../assets/images/icons/linked_camera.png"
+                src="../images/icons/linked_camera.png"
                 className="linked-camera"
                 alt=""
               />
@@ -60,7 +60,7 @@ const Verificationid = () => {
             <p className="photo-confirmation mt-3">ID BACK</p>
             <div className="registeration">
               <img
-                src="../../assets/images/icons/linked_camera.png"
+                src="../images/icons/linked_camera.png"
                 className="linked-camera"
                 alt=""
               />
@@ -77,7 +77,7 @@ const Verificationid = () => {
             <p className="photo-confirmation mt-3">PROOF OF RESIDENCE</p>
             <div className="registeration">
               <img
-                src="../../assets/images/icons/linked_camera.png"
+                src="../images/icons/linked_camera.png"
                 className="linked-camera"
                 alt=""
               />
@@ -94,7 +94,7 @@ const Verificationid = () => {
           </div>
           <div className="next">
             <a
-              href="business-confirmation-id.html"
+              href="/Verificationconfirmation"
               className="mt-5 btn-continue "
             >
               <button className="btn next-button  ">

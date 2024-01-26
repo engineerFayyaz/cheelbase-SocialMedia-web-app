@@ -35,7 +35,7 @@ const Verificationbusiness = () => {
       </div>
       <div className="id-information">
         <div className="next">
-          <a href="../business-verification/business-verification.html">
+          <a href="/Verificationsixth">
             <button className="btn next-button rounded-pill ">
               <p>manage</p>
             </button>

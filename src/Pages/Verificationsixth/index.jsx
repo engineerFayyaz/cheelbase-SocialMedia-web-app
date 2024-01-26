@@ -107,7 +107,7 @@ const Verificationsixth = () => {
                 <input type="text" className="input-field" />
               </div>
               <div className="next text-center mt-3">
-                <a href="business-verification-id-profile.html">
+                <a href="/Verificationid">
                   <button className="btn next-button rounded-pill text-center ">
                     <p>Continue</p>
                   </button>
