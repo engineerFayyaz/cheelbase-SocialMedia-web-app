@@ -67,7 +67,7 @@ const Profile =()=>{
     <div className="col-md phone-verification-col-2">
       <div className="verified-btn">
         <a
-          href="verification-profile-information.html"
+          href="/Verification1"
           className="btn verified-btn "
         >
           Get Verified
@@ -112,7 +112,7 @@ const Profile =()=>{
             </div>
             <div className="content">
               <h6>Manage subscription</h6>
-              <a href="../billing/billing-first-plan.html">
+              <a href="/Billingplan1">
                 <h5>Billed monthly</h5>
               </a>
             </div>

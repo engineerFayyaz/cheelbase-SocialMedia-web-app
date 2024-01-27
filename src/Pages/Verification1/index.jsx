@@ -1,16 +1,12 @@
 import React from "react";
 import Header from "../../Componenets/Header";
-import "../verificationProfileInformation/verificationProfileInformation.css";
+import '../Verification1/Verification1.css';
 
-
-const verificationProfileInformation =()=> {
+const Verification1=()=>{
     return(
-       <>
-            <div className="container-fliud container-width">
-        <div className="row">
-
+        <>
+       
             <Header/>
-
             <div className="container-fluid verification-profile-main">
   <div className="row pt-5  verification-profile ">
     <div className="col-md verification-content ">
@@ -64,7 +60,7 @@ const verificationProfileInformation =()=> {
           </p>
         </div>
         <div className="next">
-          <a href="verification.identity.html">
+          <a href="/Verificationsecond">
             <button className="btn next-button">Next</button>
           </a>
         </div>
@@ -75,11 +71,10 @@ const verificationProfileInformation =()=> {
       </div>
     </div>
   </div>
-</div>
 
-     </div>
+
         </div>
-       </>
+        </>
     );
-}
-export default verificationProfileInformation;
+};
+export default Verification1;
