@@ -47,6 +47,14 @@ const Marketproperties = React.lazy(()=>import('./Pages/Marketplace/Marketproper
 const Billingplan1 = React.lazy(()=>import('./Pages/Billingplans/Billingplan1'));
 const Billingplan2 = React.lazy(()=>import('./Pages/Billingplans/Billingplan2'));
 const Analyticsdashboard = React.lazy(()=>import('./Pages/Analyticsdashboard'));
+const Channel = React.lazy(()=>import('./Pages/Channels/Channel'));
+const Channelhome = React.lazy(()=>import('./Pages/Channels/Channelhome'));
+const Channelchattingpage = React.lazy(()=>import('./Pages/Channels/Channelchattingpage'));
+const Videocall = React.lazy(()=>import('./Pages/Channels/Channelchattingpage/Videocall'));
+const Cbroom = React.lazy(()=>import('./Pages/Channels/Channelchattingpage/Cbroom'));
+const Cbroomnext = React.lazy(()=>import('./Pages/Channels/Channelchattingpage/Cbroomnext'));
+const Chattingpage2 = React.lazy(()=>import('./Pages/Channels/Channelchattingpage/Chattingpage2'));
+
 
 
 const ProjectRoutes =()=>{
@@ -96,7 +104,14 @@ const ProjectRoutes =()=>{
         <Route path="/Billingplan1" element={<Billingplan1/>}/>
         <Route path="/Billingplan2" element={<Billingplan2/>}/>
         <Route path="/Analyticsdashboard" element={<Analyticsdashboard/>}/>
-                 
+        <Route path="/Channel" element={<Channel/>}/>
+        <Route path="/Channelhome" element={<Channelhome/>}/>
+        <Route path="/Channelchattingpage" element={<Channelchattingpage/>}/>
+        <Route path="/Videocall" element={<Videocall/>}/>
+        <Route path="/Cbroom" element={<Cbroom/>}/>
+        <Route path="/Cbroomnext" element={<Cbroomnext/>}/>
+        <Route path="/Chattingpage2" element={<Chattingpage2/>}/>
+                  
 
         </Routes>
         </Router>
