@@ -56,6 +56,14 @@ const Cbroomnext = React.lazy(()=>import('./Pages/Channels/Channelchattingpage/C
 const Chattingpage2 = React.lazy(()=>import('./Pages/Channels/Channelchattingpage/Chattingpage2'));
 
 
+const verificationProfileInformation = React.lazy(()=>import('./Pages/verificationProfileInformation'));
+const ChannelMain = React.lazy(()=> import('./Pages/ChannelMain'))
+const VisitorProfile = React.lazy(()=>import('./Pages/VisitorProfile'))
+const FullVideo = React.lazy(()=>import('./Pages/FullVideo'))
+const Resturants = React.lazy(()=>import('./Pages/Resturants'))
+const Products = React.lazy(()=>import('./Pages/Products'))
+const Property = React.lazy(()=> import("./Pages/Property"))
+const MarketPlace = React.lazy(()=>import("./Pages/MarketPlace"))
 
 const ProjectRoutes =()=>{
     return(
@@ -113,6 +121,14 @@ const ProjectRoutes =()=>{
         <Route path="/Chattingpage2" element={<Chattingpage2/>}/>
                   
 
+        <Route path="/verificationProfileInformation " element={<verificationProfileInformation/>}/>
+        <Route path="/ChannelMain" element={<ChannelMain/>}/>
+        <Route path="/VisitorProfile" element={<VisitorProfile/>}/>
+        <Route path="/FullVideo" element={<FullVideo/>}/>
+        <Route path="/Resturants" element={<Resturants/>}/>
+        <Route path="/Product" element={<Products/>}/>
+        <Route path="/Property" element={<Property/>}/>
+        <Route path="/MarketPlace" element={<MarketPlace/>}/>
         </Routes>
         </Router>
     </React.Suspense>

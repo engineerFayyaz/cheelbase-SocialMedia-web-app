@@ -2,12 +2,15 @@ import React from "react";
 import PHeader from "../../Componenets/PHeader";
 import PageSidebar from "../../Componenets/PageSidebar";
 import Sidebar from "../../Componenets/Sidebar";
+import RightSideBar from "../../Componenets/RightSideBar";
 
 const FullVideo = () => {
   return (
     <>
+       <PHeader />
+       <div class="container-fliud container-width">
       <div className="row">
-        <PHeader />
+     
         <PageSidebar />
         <div className="col-6" style={{ width: "45%", margin: "0 auto" }}>
           <div className="bg-img position1"></div>
@@ -46,7 +49,8 @@ const FullVideo = () => {
             </div>
           </div>
         </div>
-        <Sidebar />
+        <RightSideBar/>
+      </div>
       </div>
     </>
   );
