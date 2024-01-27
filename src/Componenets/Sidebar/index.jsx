@@ -54,7 +54,7 @@ const Sidebar = () => {
           />
           Full Video
         </a>
-        <a className="dropdown-item" href="video.html">
+        <a className="dropdown-item" href="/Gallery">
           <img
             src="images/icons/picture.png"
             alt=""
@@ -63,7 +63,7 @@ const Sidebar = () => {
           />
           Gallery
         </a>
-        <a className="dropdown-item" href="resturants.html">
+        <a className="dropdown-item" href="/Resturants">
           <img
             src="images/icons/conveyor-belt.png"
             className="mx-3"
@@ -72,7 +72,7 @@ const Sidebar = () => {
           />
           Resturants{" "}
         </a>
-        <a className="dropdown-item" href="property.html">
+        <a className="dropdown-item" href="/Products">
           <img
             src="images/icons/user.png"
             alt=""
@@ -81,7 +81,7 @@ const Sidebar = () => {
           />
           Products
         </a>
-        <a className="dropdown-item" href="#">
+        <a className="dropdown-item" href="/Property">
           <img
             src="images/icons/house.png"
             alt=""

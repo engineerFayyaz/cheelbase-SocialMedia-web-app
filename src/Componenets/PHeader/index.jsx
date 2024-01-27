@@ -8,7 +8,7 @@ const PHeader = () => {
   <header>
     <nav className="navbar navbar-expand-sm">
       <div className="container">
-        <a className="navbar-brand" href="index.html">
+        <a className="navbar-brand" href="/Home">
           Cheelbase
         </a>
         <button
@@ -36,16 +36,16 @@ const PHeader = () => {
                 Create
               </a>
               <div className="dropdown-menu" aria-labelledby="dropdownId">
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/Fullvideo">
                   Video
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/Cheels">
                   Cheels
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/Gallery">
                   Gallery
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/Products">
                   Products
                 </a>
                 <a className="dropdown-item" href="#">

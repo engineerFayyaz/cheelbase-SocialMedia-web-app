@@ -15,6 +15,12 @@ const verificationProfileInformation = React.lazy(()=>import('./Pages/verificati
 const ChannelMain = React.lazy(()=> import('./Pages/ChannelMain'))
 const VisitorProfile = React.lazy(()=>import('./Pages/VisitorProfile'))
 const FullVideo = React.lazy(()=>import('./Pages/FullVideo'))
+const Resturants = React.lazy(()=> import('./Pages/Resturants'))
+const Products = React.lazy(()=>import('./Pages/Products'))
+const Property = React.lazy(()=> import('./Pages/Property'))
+const MarketPlace = React.lazy(()=>import('./Pages/MarketPlace'))
+const MarketFood = React.lazy(()=>import('./Pages/MarketFood'))
+const MarketProperties = React.lazy(()=>import('./Pages/MarketProperties'))
 
 
 const ProjectRoutes =()=>{
@@ -33,6 +39,12 @@ const ProjectRoutes =()=>{
         <Route path="/ChannelMain" element={<ChannelMain/>}/>
         <Route path="/VisitorProfile" element={<VisitorProfile/>}/>
         <Route path="/FullVideo" element={<FullVideo/>}/>
+        <Route path="/Resturants" element={<Resturants/>}/>
+        <Route path="/Products" element={<Products/>}/>
+        <Route path="/Property" element={<Property/>}/>
+        <Route path="/MarketPlace" element={<MarketPlace/>}/>
+        <Route path="/MarketFood" element={<MarketFood/>}/>
+        <Route path="/MarketProperties" element={<MarketProperties/>}/>
         </Routes>
         </Router>
     </React.Suspense>
