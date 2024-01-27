@@ -110,7 +110,7 @@ const Sidebar = () => {
           Monitization
         </a>
         <hr className="dropdown-divider" />
-        <a className="dropdown-item" href="#">
+        <a className="dropdown-item" href="/MarketPlace">
           <img
             src="images/icons/convenience-store.png"
             alt=""
@@ -119,7 +119,7 @@ const Sidebar = () => {
           />{" "}
           Marketplace
         </a>
-        <a className="dropdown-item" href="gallery.html">
+        <a className="dropdown-item" href="#">
           <img
             src="images/icons/smartphone-call.png"
             className="mx-3"
@@ -128,7 +128,7 @@ const Sidebar = () => {
           />
           Device Setting
         </a>
-        <a className="dropdown-item" href="gallery.html">
+        <a className="dropdown-item" href="#">
           <img
             src="images/icons/hotspot.png"
             className="mx-3"
