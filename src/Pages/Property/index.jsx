@@ -2,7 +2,7 @@ import React from "react";
 import PHeader from "../../Componenets/PHeader";
 import PSidebar from "../../Componenets/PSidebar";
 import RightSideBar from "../../Componenets/RightSideBar";
-import "../../Pages/Property/property.css";
+import "../Property/property.css";
 
 const Property = () => {
   return (

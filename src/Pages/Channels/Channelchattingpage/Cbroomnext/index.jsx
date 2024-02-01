@@ -65,7 +65,7 @@ import '../Cbroomnext/Cbroomnext.css';
         </div>
         <div className="form-group mt-5">
           <div className="col-sm-offset-2 col-sm-12">
-            <a type="submit" href="/Chattingpage1" className="btn btn-primary">
+            <a type="submit" href="/Chattingpage2" className="btn btn-primary">
               Send Now
             </a>
           </div>

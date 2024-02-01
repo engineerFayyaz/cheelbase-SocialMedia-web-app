@@ -1,13 +1,12 @@
 import React from "react";
-import Header from "../../../Componenets/Header";
+import Header from "../../../../Componenets/Header";
 import '../Chattingpage2/Chattingpage2.css';
-import Sidebar from "../../../Componenets/Sidebar";
+import Sidebar from "../../../../Componenets/Sidebar";
 import '../Chattingpage2/chatting.css';
 import '../Chattingpage2/icons.css';
 import '../Chattingpage2/stories.css';
 import '../Chattingpage2/channelchatting.css';
-import '../Chattingpage2/Leftsidebar.css';
-import '../Chattingpage2/Rightsidebar.css';
+
 const Chattingpage2 = () => {
 
     return (
@@ -308,7 +307,7 @@ const Chattingpage2 = () => {
   </div>
 
       <div className="continue-next text-center">
-        <a href="/Searchcontactpage"><button className="btn btn-primary">Continue to Next</button></a>
+        <a href="/"><button className="btn btn-primary">Continue to Next</button></a>
       </div>
 </div>
 </div>

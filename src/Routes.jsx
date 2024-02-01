@@ -8,6 +8,7 @@ import BusinessVerification from "./Pages/Verificationsixth";
 const Cheelzs =React.lazy(()=>import("./Pages/Cheelzs"));
 const Gallery = React.lazy(()=>import("./Pages/Gallery"));
 const Home =React.lazy(()=>import('./Pages/Home'));
+const Header2 =React.lazy(()=>import('././Componenets/Header2'));
 const Welcome = React.lazy(()=>import('./Pages/Welcome'));
 const QrCode = React.lazy(()=>import('./Pages/QrCode'));
 const LinkingDevice = React.lazy(()=>import('./Pages/LinkingDevice'));
@@ -54,16 +55,38 @@ const Videocall = React.lazy(()=>import('./Pages/Channels/Channelchattingpage/Vi
 const Cbroom = React.lazy(()=>import('./Pages/Channels/Channelchattingpage/Cbroom'));
 const Cbroomnext = React.lazy(()=>import('./Pages/Channels/Channelchattingpage/Cbroomnext'));
 const Chattingpage2 = React.lazy(()=>import('./Pages/Channels/Channelchattingpage/Chattingpage2'));
+const TooltipComponent = React.lazy(()=>import('./Componenets/TooltipComponent/TooltipComponent'));
 
 
 const verificationProfileInformation = React.lazy(()=>import('./Pages/verificationProfileInformation'));
-const ChannelMain = React.lazy(()=> import('./Pages/ChannelMain'))
-const VisitorProfile = React.lazy(()=>import('./Pages/VisitorProfile'))
-const FullVideo = React.lazy(()=>import('./Pages/FullVideo'))
-const Resturants = React.lazy(()=>import('./Pages/Resturants'))
-const Products = React.lazy(()=>import('./Pages/Products'))
-const Property = React.lazy(()=> import("./Pages/Property"))
-const MarketPlace = React.lazy(()=>import("./Pages/MarketPlace"))
+const ChannelMain = React.lazy(()=> import('./Pages/ChannelMain'));
+const VisitorProfile = React.lazy(()=>import('./Pages/VisitorProfile'));
+const FullVideo = React.lazy(()=>import('./Pages/FullVideo'));
+const Resturants = React.lazy(()=>import('./Pages/Resturants'));
+const Products = React.lazy(()=>import('./Pages/Products'));
+const Property = React.lazy(()=> import("./Pages/Property"));
+const Orderhandler = React.lazy(()=>import("./Pages/Channels/Channelchattingpage/Orderhandler"));
+const Cbroomcontinue = React.lazy(()=>import("./Pages/Channels/Channelchattingpage/Cbroomcontinue"));
+const Cbroomcontinuing = React.lazy(()=>import("./Pages/Channels/Channelchattingpage/Cbroomcontinuing"));
+const Channeladmin = React.lazy(()=>import("./Pages/Channels/Channeladmin"));
+const Merchandisercall = React.lazy(()=>import("./Pages/Channels/Merchandisercall"));
+const Merchandisercallnext = React.lazy(()=>import("./Pages/Channels/Merchandisercallnext"));
+const Merchandisercontinue = React.lazy(()=>import("./Pages/Channels/Merchandisercontinue"));
+const Merchandisercontinued = React.lazy(()=>import("./Pages/Channels/Merchandisercontinued"));
+const Group1 = React.lazy(()=>import("./Pages/Groups/Group1"));
+const Grouphome = React.lazy(()=>import("./Pages/Groups/Grouphome"));
+const Forvisitors = React.lazy(()=>import("./Pages/Visitors/Forvisitors"));
+const Visitorprofile1 = React.lazy(()=>import("./Pages/Visitors/Visitorprofile1"));
+const Cheelbasesingle = React.lazy(()=>import("./Pages/Visitors/Cheelbasesingle"));
+const Visitorvideo = React.lazy(()=>import("./Pages/Visitors/Visitorvideo"));
+const Videosearch = React.lazy(()=>import("./Pages/Visitors/Videosearch"));
+const Visitorchatting = React.lazy(()=>import("./Pages/Visitors/Visitorchatting"));
+const Gallerypage = React.lazy(()=>import("./Pages/Visitors/Gallerypage"));
+const Restaurantpage = React.lazy(()=>import("./Pages/Visitors/Restaurantpage"));
+const Productpage = React.lazy(()=>import("./Pages/Visitors/Productpage"));
+const Propertiees = React.lazy(()=>import("./Pages/Visitors/Propertiees"));
+const Cheelbasesingle2 = React.lazy(()=>import("./Pages/Visitors/Cheelbasesingle2"));
+const Gallerymultiple = React.lazy(()=>import("./Pages/Visitors/Gallerymultiple"));
 
 const ProjectRoutes =()=>{
     return(
@@ -91,6 +114,7 @@ const ProjectRoutes =()=>{
         <Route path="/Chattingmessenger" element={<Chattingmessenger/>}/>
         <Route path="/Groupcall" element={<Groupcall/>}/>
         <Route path="/Groupcall2" element={<Groupcall2/>}/>
+        <Route path="/Header2" element={<Header2/>}/>
         
         <Route path="/Callingpage" element={<Callingpage/>}/>
         <Route path="/Callingmarina" element={<Callingmarina/>}/>
@@ -119,7 +143,12 @@ const ProjectRoutes =()=>{
         <Route path="/Cbroom" element={<Cbroom/>}/>
         <Route path="/Cbroomnext" element={<Cbroomnext/>}/>
         <Route path="/Chattingpage2" element={<Chattingpage2/>}/>
-                  
+        <Route path="/TooltipComponent" element={<TooltipComponent/>}/>
+        <Route path="/Merchandisercall" element={<Merchandisercall/>}/>
+        <Route path="/Merchandisercallnext" element={<Merchandisercallnext/>}/>
+        <Route path="/Merchandisercontinue" element={<Merchandisercontinue/>}/>
+        <Route path="/Merchandisercontinued" element={<Merchandisercontinued/>}/>
+                
 
         <Route path="/verificationProfileInformation " element={<verificationProfileInformation/>}/>
         <Route path="/ChannelMain" element={<ChannelMain/>}/>
@@ -128,7 +157,26 @@ const ProjectRoutes =()=>{
         <Route path="/Resturants" element={<Resturants/>}/>
         <Route path="/Product" element={<Products/>}/>
         <Route path="/Property" element={<Property/>}/>
-        <Route path="/MarketPlace" element={<MarketPlace/>}/>
+        <Route path="/Orderhandler" element={<Orderhandler/>}/>
+        <Route path="/Cbroomcontinue" element={<Cbroomcontinue/>}/>
+        <Route path="/Cbroomcontinuing" element={<Cbroomcontinuing/>}/>
+        <Route path="/Channeladmin" element={<Channeladmin/>}/>
+        <Route path="/Group1" element={<Group1/>}/>
+        <Route path="/Grouphome" element={<Grouphome/>}/>
+        <Route path="/Forvisitors" element={<Forvisitors/>}/>
+        <Route path="/Visitorprofile1" element={<Visitorprofile1/>}/>
+        <Route path="/Cheelbasesingle" element={<Cheelbasesingle/>}/>
+        <Route path="/Visitorvideo" element={<Visitorvideo/>}/>
+        <Route path="/Videosearch" element={<Videosearch/>}/>
+        <Route path="/Visitorchatting" element={<Visitorchatting/>}/>
+        <Route path="/Gallerypage" element={<Gallerypage/>}/>
+        <Route path="/Restaurantpage" element={<Restaurantpage/>}/>
+        <Route path="/Productpage" element={<Productpage/>}/>
+        <Route path="/Propertiees" element={<Propertiees/>}/>
+        <Route path="/Cheelbasesingle2" element={<Cheelbasesingle2/>}/>
+        <Route path="/Gallerymultiple" element={<Gallerymultiple/>}/>
+          
+
         </Routes>
         </Router>
     </React.Suspense>
