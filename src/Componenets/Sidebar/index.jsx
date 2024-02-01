@@ -100,7 +100,7 @@ const Sidebar = () => {
           />{" "}
           Verification
         </a>
-        <a className="dropdown-item" href="gallery.html">
+        <a className="dropdown-item" href="/Montization">
           <img
             src="images/icons/money.png"
             className="mx-3"

@@ -1,12 +1,12 @@
 import React from "react";
-import Header from "../../../Componenets/Header";
+import Header from "../../../../Componenets/Header";
 import '../Chattingpage2/Chattingpage2.css';
-import Sidebar from "../../../Componenets/Sidebar";
+import Sidebar from "../../../../Componenets/Sidebar";
 import '../Chattingpage2/chatting.css';
 import '../Chattingpage2/icons.css';
 import '../Chattingpage2/stories.css';
 import '../Chattingpage2/channelchatting.css';
-import '../Chattingpage2/Leftsidebar.css';
+// import '../../../Chattingpage2/Leftsidebar.css';
 import '../Chattingpage2/Rightsidebar.css';
 const Chattingpage2 = () => {
 
