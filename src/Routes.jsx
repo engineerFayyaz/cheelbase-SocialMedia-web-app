@@ -4,6 +4,7 @@ import BusinessVerification from "./Pages/Verificationsixth";
 // import HomePage from "./Pages/Home";
 // import Home from "./Pages/Home";
 // import NotFound from "./Pages/NotFound";
+const Sidebar  = React.lazy(()=>import("../src/Componenets/Sidebar"));
 
 const Cheelzs =React.lazy(()=>import("./Pages/Cheelzs"));
 const Gallery = React.lazy(()=>import("./Pages/Gallery"));
@@ -92,6 +93,8 @@ const Productpagefirst = React.lazy(()=>import("./Pages/Productpages/Productpage
 const Productpagenext = React.lazy(()=>import("./Pages/Productpages/Productpagenext"));
 const Statusfirst = React.lazy(()=>import("./Pages/Statuspages/Statusfirst"));
 const Statusnext = React.lazy(()=>import("./Pages/Statuspages/Statusnext"));
+const Statussingle = React.lazy(()=>import("./Pages/Statuspages/Statussingle"));
+
 const Statuslast = React.lazy(()=>import("./Pages/Statuspages/Statuslast"));
 const Monetizeaccount = React.lazy(()=>import("./Pages/Monetize/Monetizeaccount"));
 const Monetizeaccountnext = React.lazy(()=>import("./Pages/Monetize/Monetizeaccountnext"));
@@ -99,6 +102,11 @@ const Monetizechats = React.lazy(()=>import("./Pages/Monetize/Monetizechats"));
 const Monetizechannel = React.lazy(()=>import("./Pages/Monetize/Monetizechannel"));
 const Monetizegroup = React.lazy(()=>import("./Pages/Monetize/Monetizegroup"));
 const Monetizeaffiliate = React.lazy(()=>import("./Pages/Monetize/Monetizeaffiliate"));
+const Compaignmanager = React.lazy(()=>import("./Pages/Compaign/Compaignmanager"));
+const Compaignmanagernext = React.lazy(()=>import("./Pages/Compaign/Compaignmanagernext"));
+const Compaigncontinue = React.lazy(()=>import("./Pages/Compaign/Compaigncontinue"));
+const Compaignplacement = React.lazy(()=>import("./Pages/Compaign/Compaignplacement"));
+const Compaignlast = React.lazy(()=>import("./Pages/Compaign/Compaignlast"));
 
 const ProjectRoutes =()=>{
     return(
@@ -160,7 +168,8 @@ const ProjectRoutes =()=>{
         <Route path="/Merchandisercallnext" element={<Merchandisercallnext/>}/>
         <Route path="/Merchandisercontinue" element={<Merchandisercontinue/>}/>
         <Route path="/Merchandisercontinued" element={<Merchandisercontinued/>}/>
-                
+        <Route path="/Sidebar" element={<Sidebar/>}/>
+              
 
         <Route path="/verificationProfileInformation " element={<verificationProfileInformation/>}/>
         <Route path="/ChannelMain" element={<ChannelMain/>}/>
@@ -199,6 +208,12 @@ const ProjectRoutes =()=>{
         <Route path="/Monetizechannel" element={<Monetizechannel/>}/>
         <Route path="/Monetizegroup" element={<Monetizegroup/>}/>
         <Route path="/Monetizeaffiliate" element={<Monetizeaffiliate/>}/>
+        <Route path="/Compaignmanager" element={<Compaignmanager/>}/>
+        <Route path="/Compaignmanagernext" element={<Compaignmanagernext/>}/>
+        <Route path="/Compaigncontinue" element={<Compaigncontinue/>}/>
+        <Route path="/Compaignplacement" element={<Compaignplacement/>}/>
+        <Route path="/Compaignlast" element={<Compaignlast/>}/>
+        <Route path="/Statussingle" element={<Statussingle/>}/>
           
 
         </Routes>
