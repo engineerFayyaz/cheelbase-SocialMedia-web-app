@@ -87,6 +87,18 @@ const Productpage = React.lazy(()=>import("./Pages/Visitors/Productpage"));
 const Propertiees = React.lazy(()=>import("./Pages/Visitors/Propertiees"));
 const Cheelbasesingle2 = React.lazy(()=>import("./Pages/Visitors/Cheelbasesingle2"));
 const Gallerymultiple = React.lazy(()=>import("./Pages/Visitors/Gallerymultiple"));
+const Propertynext = React.lazy(()=>import("./Pages/Propertynext"));
+const Productpagefirst = React.lazy(()=>import("./Pages/Productpages/Productpagefirst"));
+const Productpagenext = React.lazy(()=>import("./Pages/Productpages/Productpagenext"));
+const Statusfirst = React.lazy(()=>import("./Pages/Statuspages/Statusfirst"));
+const Statusnext = React.lazy(()=>import("./Pages/Statuspages/Statusnext"));
+const Statuslast = React.lazy(()=>import("./Pages/Statuspages/Statuslast"));
+const Monetizeaccount = React.lazy(()=>import("./Pages/Monetize/Monetizeaccount"));
+const Monetizeaccountnext = React.lazy(()=>import("./Pages/Monetize/Monetizeaccountnext"));
+const Monetizechats = React.lazy(()=>import("./Pages/Monetize/Monetizechats"));
+const Monetizechannel = React.lazy(()=>import("./Pages/Monetize/Monetizechannel"));
+const Monetizegroup = React.lazy(()=>import("./Pages/Monetize/Monetizegroup"));
+const Monetizeaffiliate = React.lazy(()=>import("./Pages/Monetize/Monetizeaffiliate"));
 
 const ProjectRoutes =()=>{
     return(
@@ -155,7 +167,7 @@ const ProjectRoutes =()=>{
         <Route path="/VisitorProfile" element={<VisitorProfile/>}/>
         <Route path="/FullVideo" element={<FullVideo/>}/>
         <Route path="/Resturants" element={<Resturants/>}/>
-        <Route path="/Product" element={<Products/>}/>
+        <Route path="/Products" element={<Products/>}/>
         <Route path="/Property" element={<Property/>}/>
         <Route path="/Orderhandler" element={<Orderhandler/>}/>
         <Route path="/Cbroomcontinue" element={<Cbroomcontinue/>}/>
@@ -175,6 +187,18 @@ const ProjectRoutes =()=>{
         <Route path="/Propertiees" element={<Propertiees/>}/>
         <Route path="/Cheelbasesingle2" element={<Cheelbasesingle2/>}/>
         <Route path="/Gallerymultiple" element={<Gallerymultiple/>}/>
+        <Route path="/Propertynext" element={<Propertynext/>}/>
+        <Route path="/Productpagefirst" element={<Productpagefirst/>}/>
+        <Route path="/Productpagenext" element={<Productpagenext/>}/>
+        <Route path="/Statusfirst" element={<Statusfirst/>}/>
+        <Route path="/Statusnext" element={<Statusnext/>}/>
+        <Route path="/Statuslast" element={<Statuslast/>}/>
+        <Route path="/Monetizeaccount" element={<Monetizeaccount/>}/>
+        <Route path="/Monetizeaccountnext" element={<Monetizeaccountnext/>}/>
+        <Route path="/Monetizechats" element={<Monetizechats/>}/>
+        <Route path="/Monetizechannel" element={<Monetizechannel/>}/>
+        <Route path="/Monetizegroup" element={<Monetizegroup/>}/>
+        <Route path="/Monetizeaffiliate" element={<Monetizeaffiliate/>}/>
           
 
         </Routes>
