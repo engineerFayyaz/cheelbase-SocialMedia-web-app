@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../../Componenets/Header";
-import '../Verificationconfirmation/Verificationconfirmation.css';
+import Header from "../../../Componenets/Header";
+import './Verificationconfirmation.css';
 
 const Verificationconfirmation = () => {
 

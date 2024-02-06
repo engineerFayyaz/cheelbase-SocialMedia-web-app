@@ -327,10 +327,12 @@ body {
 }
 
 
+
 .icons {
     position: relative;
-    top: 0.5rem;
-    left: 1rem;
+    top: -2.8rem;
+    left: 73px;
+    width: 30%;
 }
 
 .detail-section {
@@ -346,37 +348,15 @@ body {
     padding-inline: 10px;
 }
 
-.burger {
-    background-image: url('/public/images/Rectangle\ 5252.png');
-    position: relative;
-    height: 23vh;
-    width: 72%;
-    border-radius: 5px;
-    position: relative;
-    left: 1.4rem;
-}
-
 .burger-1{
-    width: 21%;
-    height: 18%;
-    position: relative;
-    left:25rem;
-    top: -18rem;
-
+    width: 10%;
+    height: 100px;
 }
 
 
-.burger-detail {
-    background-color: #fff4f4;
-    height: 31vh;
-    width: 99%;
-    position: relative;
-    border-radius: 5px;
-}
 
-.burgerr {
+.burgerr{
     color: #110C46;
-    font-weight: 550;
 }
 
 .price {
@@ -411,7 +391,7 @@ body {
 
 .card-main {
     background-color: #FFFFFF;
-    height: 75%;
+    height: 89%;
     width: 36%;
     border-radius: 9px;
 }
@@ -432,6 +412,11 @@ body {
 
 .full-address {
     color: #8E8E8E;
+}
+
+.address{
+    margin-left: -4px;
+    font-weight: bold;
 }
 
 .cardbodysecond {
@@ -745,8 +730,8 @@ body {
 
 .cheels {
     background-color: #FFFFFF;
-    height: 75%;
-    width: 64%;
+    height: 89%;
+    width: 63%;
     border-radius: 8px;
     margin-left: 5px;
 }
@@ -780,10 +765,10 @@ body {
 .gallerymain{
     background-color: #FFFFFF;
     height: 171px;
-    width: 32%;
+    width: 33%;
     border-radius: 8px;
     position: relative;
-    top: -8rem;
+    right: 0.5rem;
 }
 
 .img-rectangle{
@@ -805,17 +790,17 @@ body {
 
 .burger-detail{
     background-color:#fff4f4;
-    height: 31vh;
-    width: 99%;
+    height: 28px;
+    width: 100%;
     position: relative; 
     border-radius: 5px; 
 }
 
 .burger-main{
     position: relative;
-    top: -10px;
-    right: 77px;
+    right: 0.2rem;
 }
+
 .burgerr{
     color: #110C46;
     font-weight: 550;
@@ -840,6 +825,7 @@ body {
 
 .description{
     font-size: small;
+    height: 20px;
 }
 
 
@@ -886,4 +872,48 @@ body {
     position: relative;
     top: -9rem;
     left: 7px;
+}
+
+.card-text{
+    font-size: x-small
+}
+
+.cat-main{
+    background-color: #FFFFFF;
+    height: 230px;
+    width: 35%;
+    position: relative;
+    border-radius: 6px;
+}
+
+.img-icon{
+    height: 30px;
+    width: 30px;
+}
+.product{
+    height: 20px;
+    width: 46%;
+    background-color: red;
+    border-radius: 5px;
+    font-size: x-small;
+    position: relative;
+    color: whitesmoke;
+    top: -147px;
+}
+
+.feature{
+    height: 20px;
+    width: 46%;
+    background-color:black;
+    border-radius: 5px;
+    font-size: x-small;
+    position: relative;
+    color: whitesmoke;
+    top: -147px;
+}
+
+.toy{
+    font-size: small;
+    position: relative;
+    top: -58px;
 }

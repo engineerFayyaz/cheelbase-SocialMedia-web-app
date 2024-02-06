@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../../Componenets/Header";
-import '../Verificationfifth/Verificationfifth.css';
+import Header from "../../../Componenets/Header";
+import './Verificationfifth.css';
 
 const Verificationfifth = () => {
     return (

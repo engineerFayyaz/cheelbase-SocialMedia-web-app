@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import BusinessVerification from "./Pages/Verificationsixth";
+import BusinessVerification from "./Pages/Verification/Verificationsixth";
 // import HomePage from "./Pages/Home";
 // import Home from "./Pages/Home";
 // import NotFound from "./Pages/NotFound";
@@ -13,16 +13,16 @@ const Header2 =React.lazy(()=>import('././Componenets/Header2'));
 const Welcome = React.lazy(()=>import('./Pages/Welcome'));
 const QrCode = React.lazy(()=>import('./Pages/QrCode'));
 const LinkingDevice = React.lazy(()=>import('./Pages/LinkingDevice'));
-const Profile= React.lazy(()=>import ('./Pages/Profile'));
-const Verification1 = React.lazy(()=>import('./Pages/Verification1'));
-const Verificationsecond = React.lazy(()=>import('./Pages/Verificationsecond'));
-const Verificationthird = React.lazy(()=>import('./Pages/Verificationthird'));
-const Verificationfourth = React.lazy(()=>import('./Pages/Verificationfourth'));
-const Verificationfifth = React.lazy(()=>import('./Pages/Verificationfifth'));
-const Verificationbusiness = React.lazy(()=>import('./Pages/Verificationbusiness'));
-const Verificationsixth = React.lazy(()=>import('./Pages/Verificationsixth'));
-const Verificationid = React.lazy(()=>import('./Pages/Verificationid'));
-const Verificationconfirmation = React.lazy(()=>import('./Pages/Verificationconfirmation'));
+const Verificationmain = React.lazy(()=>import('./Pages/Verification/Verificationmain'));
+const Verification1 = React.lazy(()=>import('./Pages/Verification/Verification1'));
+const Verificationsecond = React.lazy(()=>import('./Pages/Verification/Verificationsecond'));
+const Verificationthird = React.lazy(()=>import('./Pages/Verification/Verificationthird'));
+const Verificationfourth = React.lazy(()=>import('./Pages/Verification/Verificationfourth'));
+const Verificationfifth = React.lazy(()=>import('./Pages/Verification/Verificationfifth'));
+const Verificationbusiness = React.lazy(()=>import('./Pages/Verification/Verificationbusiness'));
+const Verificationsixth = React.lazy(()=>import('./Pages/Verification/Verificationsixth'));
+const Verificationid = React.lazy(()=>import('./Pages/Verification/Verificationid'));
+const Verificationconfirmation = React.lazy(()=>import('./Pages/Verification/Verificationconfirmation'));
 const Chattingpage1 = React.lazy(()=>import('./Pages/Chattingpages/Chattingpage1'));
 const Searchcontactpage = React.lazy(()=>import('./Pages/Chattingpages/Searchcontactpage'));
 const Chattingmessenger = React.lazy(()=>import('./Pages/Chattingpages/Chattingmessenger'));
@@ -59,7 +59,7 @@ const Chattingpage2 = React.lazy(()=>import('./Pages/Channels/Channelchattingpag
 const TooltipComponent = React.lazy(()=>import('./Componenets/TooltipComponent/TooltipComponent'));
 
 
-const verificationProfileInformation = React.lazy(()=>import('./Pages/verificationProfileInformation'));
+const Verificationprofileinformation = React.lazy(()=>import('./Pages/Verification/Verificationprofileinformation'));
 const ChannelMain = React.lazy(()=> import('./Pages/ChannelMain'));
 const VisitorProfile = React.lazy(()=>import('./Pages/VisitorProfile'));
 const FullVideo = React.lazy(()=>import('./Pages/FullVideo'));
@@ -119,7 +119,7 @@ const ProjectRoutes =()=>{
         <Route path="/" element={<Welcome/>}/>
         <Route path="/QrCode" element={<QrCode/>}/>
         <Route path="/LinkingDevice" element={<LinkingDevice/>}/>
-        <Route path="/Profile" element={<Profile/>}/>
+        <Route path="/Verificationmain" element={<Verificationmain/>}/>
         <Route path="/Verification1" element={<Verification1/>}/>
         <Route path="/Verificationsecond" element={<Verificationsecond/>}/>
         <Route path="/Verificationthird" element={<Verificationthird/>}/>
@@ -171,7 +171,8 @@ const ProjectRoutes =()=>{
         <Route path="/Sidebar" element={<Sidebar/>}/>
               
 
-        <Route path="/verificationProfileInformation " element={<verificationProfileInformation/>}/>
+        <Route path="/Verificationprofileinformation " element={<Verificationprofileinformation/>}/>
+
         <Route path="/ChannelMain" element={<ChannelMain/>}/>
         <Route path="/VisitorProfile" element={<VisitorProfile/>}/>
         <Route path="/FullVideo" element={<FullVideo/>}/>

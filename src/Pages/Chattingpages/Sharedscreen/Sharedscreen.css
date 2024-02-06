@@ -9,25 +9,11 @@
 }
 
 .height-main {
-    background-image: url('/public/images/Rectangle\ 1128.png');
     height: 90vh;
+    width: 101%;
+    background-image: url('/public/images/Rectangle\ 1128.png');
 }
 
-.visit-image-2{
-    background-image: url('/public/images/Group\ 3465296.png');
-    height: 48vh;
-    width: 20%;
-    position: relative;
-    top: 13rem;
-
-}
-
-.img-circle{
-    float: right;
-    position: relative;
-    top: 14.8rem;
-    right: 0.2rem;
-}
 .vist-img {
     width: 99%;
     height: 89%;
@@ -62,31 +48,6 @@
     width: 50%;
 }
 
-.btn-profile-2{
-    background-color: #16146C;
-    width:140px;
-    height:30px;
-    border-radius: 2px;
-    float: right;
-    position: relative;
-    top: 0.3rem;
-    right: 0.2rem;
-    font-weight: 550;
-
-}
-
-.btn-container-2{
-    background-color: #16146C;
-    border-radius: 2px;
-    width:140px;
-    height:30px;
-    float: right;
-    font-weight: 550;  
-    position: relative;
-    top: 10rem;
-    right: 0.6rem;
-}
-
 .btn-view {
     width: 100px;
     height: 30px;
@@ -106,21 +67,6 @@
 .img-width {
     height: 80px;
     line-height: 0px;
-}
-
-.marina-ojok{
-    background-color: #FFFFFF;
-    width:165px;
-    height:30px;
-    border-radius: 5px;
-    position: relative;
-    left: 15.8rem;
-    top: 30rem;
-}
-
-.img-ojok{
-    width:20px;
-    height:20px;
 }
 
 .left-img {
@@ -210,4 +156,86 @@
     border-radius: 50%;
     padding: 10px;
     width: 130px;
+}
+
+.visit-image-2{
+    background-image: url('/public/images/Group 3465296.png');
+    height: 268px;
+    width: 20%;
+    position: relative;
+    top: 13.2rem;
+}
+
+.img-circle{
+    float: right;
+    position: relative;
+    top: 14.7rem;
+    right: 11.1px;
+}
+
+.marina-ojok{
+    background-color: #FFFFFF;
+    height: 24px;
+    width: 13%;
+    border-radius: 3px;
+    position: relative;
+    top: 29.9rem;
+    left: 15.9rem;
+}
+
+.listing-product2{
+    height: 150px;
+    width: 19%;
+}
+
+.btn-profile-2{
+    float: right;
+    position: relative;
+    top: 6px;
+    right: 9px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+.update-cover{
+    
+    height: 39px;
+    width: 10%;
+    float: right;
+    position: relative;
+    top: 10.5rem;
+    left: rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.updateproof{
+    background-color: #30146C;
+    height: 37px;
+    width: 100%;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;   
+}
+.btnproof{
+    background-color: #30146C;
+    height: 37px;
+    width: 97%;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.img-sizing{
+    width: 100%;
+}
+
+.website-link{
+    padding-inline: 10px;
+}
+
+.img-size{
+    height: 25px;
+    width: 25px;
 }

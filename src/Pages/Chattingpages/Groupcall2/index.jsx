@@ -1089,32 +1089,31 @@ const Groupcall2 = () =>{
           <div className="burger">
             <img src="../images/Group 18484 (1).png" alt="" />
           </div>
-          <div className="type-message  d-flex">
-            <img src="../images/Group 14.png" alt="" />
-            <hr className="lined " />
-            <div className="icons-list   d-flex">
-              <img
-                src="../images/icons/Vector.png"
-                className="img-icon"
-                alt=""
-              />
-              <img
-                src="../images/icons/Vector (3).png"
-                className="img-icon2"
-                alt=""
-              />
-              <img
-                src="../images/icons/camera icon.png"
-                className="img-icon3"
-                alt=""
-              />
-              <img
-                src="../images/icons/recorder icon.png"
-                className="img-icon4"
-                alt=""
-              />
-            </div>
-          </div>
+
+          <div className="d-flex formgroup">
+  <img src="../images/Group 14.png" className="img-group" alt="" />
+  <input type="text" className="input-field mt-2 ms-2" />
+  <br />
+  <div className="icons-list   d-flex">
+    <img src="../images/icons/Vector.png" className="img-icon" alt="" />
+    <img
+      src="../images/icons/Vector (3).png"
+      className="img-icon2"
+      alt=""
+    />
+    <img
+      src="../images/icons/camera icon.png"
+      className="img-icon3"
+      alt=""
+    />
+    <img
+      src="../images/icons/recorder icon.png"
+      className="img-icon4"
+      alt=""
+    />
+  </div>
+</div>
+
         
           <div className="continue-next text-center">
         <a href="/Groupchat"><button className="btn btn-primary">Continue to Next</button></a>

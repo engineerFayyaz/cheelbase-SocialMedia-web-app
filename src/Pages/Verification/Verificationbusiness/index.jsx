@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../../Componenets/Header";
-import '../Verificationbusiness/Verificationbusiness.css';
+import Header from "../../../Componenets/Header";
+import './Verificationbusiness.css';
 
 const Verificationbusiness = () => {
 

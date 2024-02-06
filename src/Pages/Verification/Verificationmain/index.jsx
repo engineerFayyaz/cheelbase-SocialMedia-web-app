@@ -1,14 +1,11 @@
 import React from "react";
-import Header from "../../Componenets/Header";
-import "../Profile/verification.css";
+import Header from "../../../Componenets/Header";
+import '../Verificationmain/Verificationmain.css';
 
-const Profile =()=>{
+const Verificationmain = () => {
     return(
         <>
-         <div className="container-fliud container-width">
-        <div className="row">
         <Header/>
-        
         <div className="container-fluid verification-main">
   <div className="row d-flex align-items-center gap-4">
     <div className="col-md p-3 phone-verification-col-1">
@@ -112,7 +109,7 @@ const Profile =()=>{
             </div>
             <div className="content">
               <h6>Manage subscription</h6>
-              <a href="/Billingplan1">
+              <a href="/Billlingplan1">
                 <h5>Billed monthly</h5>
               </a>
             </div>
@@ -123,10 +120,8 @@ const Profile =()=>{
   </div>
 </div>
 
-
-        </div>
-        </div>
         </>
-    );
+    )
 }
-export default Profile;
+
+export default Verificationmain;

@@ -273,7 +273,8 @@ font-size: 20px;
     height: 60px;
     width: 100%;
     border-radius: 10px;
-    margin-top: 50px;
+    position: relative;
+    top: 18rem;
 }
 
 .icons-list{
@@ -701,4 +702,38 @@ font-size: 20px;
 
 
 
+.next-button{
+    position: relative;
+    top: 19rem;
+    text-align: center;
+}
+
+.input-text{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 35%;
+    background-color: rgb(245, 239, 239);
+    color: #000000
+}
+
+.input-field{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 470px;
+    height: 34px;
+    color: #000000;
+
+}
+
+.formgroup{
+    background-color: #FFFFFF;
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    top: 18rem;
+}
+.img-group{
+    height: 50px;
+    width: 50px;
+}
 

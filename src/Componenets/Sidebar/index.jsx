@@ -91,7 +91,7 @@ const Sidebar = () => {
           Properties
         </a>
         <hr className="dropdown-divider" />
-        <a className="dropdown-item" href="#">
+        <a className="dropdown-item" href="Verificationmain">
           <img
             src="images/icons/verified.png"
             alt=""
@@ -100,7 +100,7 @@ const Sidebar = () => {
           />{" "}
           Verification
         </a>
-        <a className="dropdown-item" href="/Montization">
+        <a className="dropdown-item" href="/Monetizeaccount">
           <img
             src="images/icons/money.png"
             className="mx-3"

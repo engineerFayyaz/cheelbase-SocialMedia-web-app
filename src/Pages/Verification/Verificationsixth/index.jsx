@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../../Componenets/Header";
-import '../Verificationsixth/Verificationsixth.css';
+import Header from "../../../Componenets/Header";
+import './Verificationsixth.css';
 
 const Verificationsixth = () => {
     return (

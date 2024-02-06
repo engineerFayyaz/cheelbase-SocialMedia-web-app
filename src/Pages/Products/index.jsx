@@ -99,104 +99,677 @@ const Products = () => {
               </div>
             </div>
             {/* 1st */}
-            <div className="row">
-              <div className="col-lg-3">
-                <div>
-                  <img
-                    className="img-3-width"
-                    src="../images/Subtract(1).png"
-                    alt=""
-                  />
-                </div>
-                <div className="baby-featured">
-                  <div className="baby-product">
-                    <span>Baby products</span>
-                  </div>
-                  <div className="featured">
-                    <span>Featured</span>
-                  </div>
-                  <div className="whattsapp-icon ms-2">
-                    <img
-                      className="fs-1"
-                      src="../images/whatsapp-yellow.png"
-                      alt=""
-                    />
-                    <img src="../images/Group 18682.png" alt="" />
-                  </div>
-                  <div className="text-below-Toddler">
-                    <span>Toddler's toy</span>
-                  </div>
-                  <div className="courrency mt-3">
-                    <span className="courrency1">$20.36 (USD)</span>
-                    <button className="btn-bg-button text-end">more</button>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3">
-                <div>
-                  <img
-                    className="img-3-width"
-                    src="../images/Subtract(1).png"
-                    alt=""
-                  />
-                </div>
-                <div className="baby-featured">
-                  <div className="baby-product">
-                    <span>Baby products</span>
-                  </div>
-                  <div className="featured">
-                    <span>Featured</span>
-                  </div>
-                  <div className="whattsapp-icon ms-2">
-                    <img
-                      className="fs-1"
-                      src="../images/whatsapp-yellow.png"
-                      alt=""
-                    />
-                    <img src="../images/Group 18682.png" alt="" />
-                  </div>
-                  <div className="text-below-Toddler">
-                    <span>Toddler's toy</span>
-                  </div>
-                  <div className="courrency mt-3">
-                    <span className="courrency1">$20.36 (USD)</span>
-                    <button className="btn-bg-button text-end">more</button>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3">
-                <div>
-                  <img
-                    className="img-3-width"
-                    src="../images/Subtract(1).png"
-                    alt=""
-                  />
-                </div>
-                <div className="baby-featured">
-                  <div className="baby-product">
-                    <span>Baby products</span>
-                  </div>
-                  <div className="featured">
-                    <span>Featured</span>
-                  </div>
-                  <div className="whattsapp-icon ms-2">
-                    <img
-                      className="fs-1"
-                      src="../images/whatsapp-yellow.png"
-                      alt=""
-                    />
-                    <img src="../images/Group 18682.png" alt="" />
-                  </div>
-                  <div className="text-below-Toddler">
-                    <span>Toddler's toy</span>
-                  </div>
-                  <div className="courrency mt-3">
-                    <span className="courrency1">$20.36 (USD)</span>
-                    <button className="btn-bg-button text-end">more</button>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3">
+        
+            <div className="photos-detail">
+  <div className="cat-photos d-flex justify-content-evenly align-items-center ">
+    <div className="card-cat" style={{ width: "15.5rem" }}>
+      <div className="feature mt-1">
+        <p className="text-center">Featured</p>
+      </div>
+      <div className="icons d-flex gap-3">
+        <img src="../images/icons/Group 18687.png" alt="" />
+        <img src="../images/icons/Group 18688.png" alt="" />
+      </div>
+      <div className="catbody">
+        <p className="">Toddler's toy</p>
+        <div className="usd justify-content-between align-items-center d-flex">
+          <span className="amount">$20.36 (USD)</span>
+          <button className="btn more">more</button>
+        </div>
+      </div>
+    </div>
+
+    <div className="card-cat" style={{ width: "15.5rem" }}>
+      <div className="feature mt-1">
+        <p className="text-center">Featured</p>
+      </div>
+      <div className="icons d-flex gap-3">
+        <img src="../images/icons/Group 18687.png" alt="" />
+        <img src="../images/icons/Group 18688.png" alt="" />
+      </div>
+      <div className="catbody">
+        <p className="">Toddler's toy</p>
+        <div className="usd justify-content-between align-items-center d-flex">
+          <span className="amount">$20.36 (USD)</span>
+          <button className="btn more">more</button>
+        </div>
+      </div>
+    </div>
+    <div className="card-cat" style={{ width: "15.5rem" }}>
+      <div className="feature mt-1">
+        <p className="text-center">Featured</p>
+      </div>
+      <div className="icons d-flex gap-3">
+        <img src="../images/icons/Group 18687.png" alt="" />
+        <img src="../images/icons/Group 18688.png" alt="" />
+      </div>
+      <div className="catbody">
+        <p className="">Toddler's toy</p>
+        <div className="usd justify-content-between align-items-center d-flex">
+          <span className="amount">$20.36 (USD)</span>
+          <button className="btn more">more</button>
+        </div>
+      </div>
+    </div>
+    <div className="card-cat" style={{ width: "15.5rem" }}>
+      <div className="feature mt-1">
+        <p className="text-center">Featured</p>
+      </div>
+      <div className="icons d-flex gap-3">
+        <img src="../images/icons/Group 18687.png" alt="" />
+        <img src="../images/icons/Group 18688.png" alt="" />
+      </div>
+      <div className="catbody">
+        <p className="">Toddler's toy</p>
+        <div className="usd justify-content-between align-items-center d-flex">
+          <span className="amount">$20.36 (USD)</span>
+          <button className="btn more">more</button>
+        </div>
+      </div>
+    </div>
+    <div className="card-cat" style={{ width: "15.5rem" }}>
+      <div className="feature mt-1">
+        <p className="text-center">Featured</p>
+      </div>
+      <div className="icons d-flex gap-3">
+        <img src="../images/icons/Group 18687.png" alt="" />
+        <img src="../images/icons/Group 18688.png" alt="" />
+      </div>
+      <div className="catbody">
+        <p className="">Toddler's toy</p>
+        <div className="usd justify-content-between align-items-center d-flex">
+          <span className="amount">$20.36 (USD)</span>
+          <button className="btn more">more</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div className="burger-photos d-flex justify-content-evenly align-items-center ">
+    <div className="burger-1">
+      <div className="burger"></div>
+      <div className="burger-detail ">
+        <div className="burger-price d-flex  justify-content-between align-items-center">
+          <p className="burgerr ms-1 ">Burger</p>
+          <p className="price me-1 ">$3.49</p>
+        </div>
+        <p className="description  text-center">
+          This is my whole description for the whole me
+        </p>
+        <div className="more-detail d-flex justify-content-between align-items-center">
+          <div className="more-btn  me-5">
+            <button className="btn  btn-more">more</button>
+          </div>
+          <div className="icons-burger d-flex gap-3 me-3">
+            <img src="../images/icons/Group 18687.png" alt="" />
+            <img src="../images/icons/Group 18688.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="burger-1 ">
+      <div className="burger"></div>
+      <div className="burger-detail ">
+        <div className="burger-price d-flex  justify-content-between align-items-center">
+          <p className="burgerr ms-1 ">Burger</p>
+          <p className="price me-1 ">$3.49</p>
+        </div>
+        <p className="description  text-center">
+          This is my whole description for the whole me
+        </p>
+        <div className="more-detail d-flex justify-content-between align-items-center">
+          <div className="more-btn  me-5">
+            <button className="btn  btn-more">more</button>
+          </div>
+          <div className="icons-burger d-flex gap-3 me-3">
+            <img src="../images/icons/Group 18687.png" alt="" />
+            <img src="../images/icons/Group 18688.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="burger-1 ">
+      <div className="burger"></div>
+      <div className="burger-detail ">
+        <div className="burger-price d-flex  justify-content-between align-items-center">
+          <p className="burgerr ms-1 ">Burger</p>
+          <p className="price me-1 ">$3.49</p>
+        </div>
+        <p className="description  text-center">
+          This is my whole description for the whole me
+        </p>
+        <div className="more-detail d-flex justify-content-between align-items-center">
+          <div className="more-btn  me-5">
+            <button className="btn  btn-more">more</button>
+          </div>
+          <div className="icons-burger d-flex gap-3 me-3">
+            <img src="../images/icons/Group 18687.png" alt="" />
+            <img src="../images/icons/Group 18688.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="burger-1 ">
+      <div className="burger"></div>
+      <div className="burger-detail ">
+        <div className="burger-price d-flex  justify-content-between align-items-center">
+          <p className="burgerr ms-1 ">Burger</p>
+          <p className="price me-1 ">$3.49</p>
+        </div>
+        <p className="description  text-center">
+          This is my whole description for the whole me
+        </p>
+        <div className="more-detail d-flex justify-content-between align-items-center">
+          <div className="more-btn  me-5">
+            <button className="btn  btn-more">more</button>
+          </div>
+          <div className="icons-burger d-flex gap-3 me-3">
+            <img src="../images/icons/Group 18687.png" alt="" />
+            <img src="../images/icons/Group 18688.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="burger-1">
+      <div className="burger"></div>
+      <div className="burger-detail ">
+        <div className="burger-price d-flex  justify-content-between align-items-center">
+          <p className="burgerr ms-1 ">Burger</p>
+          <p className="price me-1 ">$3.49</p>
+        </div>
+        <p className="description  text-center">
+          This is my whole description for the whole me
+        </p>
+        <div className="more-detail d-flex justify-content-between align-items-center">
+          <div className="more-btn  me-5">
+            <button className="btn  btn-more">more</button>
+          </div>
+          <div className="icons-burger d-flex gap-3 me-3">
+            <img src="../images/icons/Group 18687.png" alt="" />
+            <img src="../images/icons/Group 18688.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div className="house-photos d-flex justify-content-evenly align-items-center">
+    <div className="card" style={{ width: "18.8rem" }}>
+      <img
+        src="../images/icons/Group 18687.png"
+        className="img-whatsapp"
+        alt="..."
+      />
+      <div className="catbody justify-content-between align-items-center gap-5">
+        <h6 className="price-per-month mt-2 ">$2500/Mo</h6>
+        <div className="apartment  d-flex justify-content-between align-items-center">
+          <p className="comfort">Comfortable Apartment</p>
+          <button className="btn btn-sale mb-3">Sale</button>
+        </div>
+        <div className="address d-flex gap-1">
+          <img
+            src="../images/icons/Vector (8).png"
+            className="img-location"
+          />
+          <p className="full-address "> 709 West Drive Chicago, IL 60606</p>
+        </div>
+        <div className="icons-details d-flex">
+          <div className="bed-2 d-flex">
+            <img
+              src="../images/icons/Vector (7).png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border"></div>
+            <p className="beds-3 ms-1">3 Beds</p>
+          </div>
+          <div className="bed-2 d-flex ms-3">
+            <img
+              src="../images/icons/Icon (2).png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border ms-1"></div>
+            <p className="beds-3 ms-1">2 Baths</p>
+          </div>
+          <div className="bed-2 d-flex ms-3">
+            <img
+              src="../images/icons/Icon.png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border ms-1"></div>
+            <p className="beds-3 ms-1">1 Parking</p>
+          </div>
+          <div className="bed-2 d-flex ms-3">
+            <img
+              src="../images/icons/Icon (1).png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border ms-1"></div>
+            <p className="beds-3 ms-1">120 sqft</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="card" style={{ width: "18.8rem" }}>
+      <img
+        src="../images/icons/Group 18687.png"
+        className="img-whatsapp"
+        alt="..."
+      />
+      <div className="catbody justify-content-between align-items-center gap-5">
+        <h6 className="price-per-month mt-2 ">$2500/Mo</h6>
+        <div className="apartment  d-flex justify-content-between align-items-center">
+          <p className="comfort">Comfortable Apartment</p>
+          <button className="btn btn-sale mb-3">Sale</button>
+        </div>
+        <div className="address d-flex gap-1">
+          <img
+            src="../images/icons/Vector (8).png"
+            className="img-location"
+          />
+          <p className="full-address "> 709 West Drive Chicago, IL 60606</p>
+        </div>
+        <div className="icons-details d-flex">
+          <div className="bed-2 d-flex">
+            <img
+              src="../images/icons/Vector (7).png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border"></div>
+            <p className="beds-3 ms-1">3 Beds</p>
+          </div>
+          <div className="bed-2 d-flex ms-3">
+            <img
+              src="../images/icons/Icon (2).png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border ms-1"></div>
+            <p className="beds-3 ms-1">2 Baths</p>
+          </div>
+          <div className="bed-2 d-flex ms-3">
+            <img
+              src="../images/icons/Icon.png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border ms-1"></div>
+            <p className="beds-3 ms-1">1 Parking</p>
+          </div>
+          <div className="bed-2 d-flex ms-3">
+            <img
+              src="../images/icons/Icon (1).png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border ms-1"></div>
+            <p className="beds-3 ms-1">120 sqft</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="card" style={{ width: "18.8rem" }}>
+      <img
+        src="../images/icons/Group 18687.png"
+        className="img-whatsapp"
+        alt="..."
+      />
+      <div className="catbody justify-content-between align-items-center gap-5">
+        <h6 className="price-per-month mt-2 ">$2500/Mo</h6>
+        <div className="apartment  d-flex justify-content-between align-items-center">
+          <p className="comfort">Comfortable Apartment</p>
+          <button className="btn btn-sale mb-3">Sale</button>
+        </div>
+        <div className="address d-flex gap-1">
+          <img
+            src="../images/icons/Vector (8).png"
+            className="img-location"
+          />
+          <p className="full-address "> 709 West Drive Chicago, IL 60606</p>
+        </div>
+        <div className="icons-details d-flex">
+          <div className="bed-2 d-flex">
+            <img
+              src="../images/icons/Vector (7).png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border"></div>
+            <p className="beds-3 ms-1">3 Beds</p>
+          </div>
+          <div className="bed-2 d-flex ms-3">
+            <img
+              src="../images/icons/Icon (2).png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border ms-1"></div>
+            <p className="beds-3 ms-1">2 Baths</p>
+          </div>
+          <div className="bed-2 d-flex ms-3">
+            <img
+              src="../images/icons/Icon.png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border ms-1"></div>
+            <p className="beds-3 ms-1">1 Parking</p>
+          </div>
+          <div className="bed-2 d-flex ms-3">
+            <img
+              src="../images/icons/Icon (1).png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border ms-1"></div>
+            <p className="beds-3 ms-1">120 sqft</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="card" style={{ width: "18.8rem" }}>
+      <img
+        src="../images/icons/Group 18687.png"
+        className="img-whatsapp"
+        alt="..."
+      />
+      <div className="catbody justify-content-between align-items-center gap-5">
+        <h6 className="price-per-month mt-2 ">$2500/Mo</h6>
+        <div className="apartment  d-flex justify-content-between align-items-center">
+          <p className="comfort">Comfortable Apartment</p>
+          <button className="btn btn-sale mb-3">Sale</button>
+        </div>
+        <div className="address d-flex gap-1">
+          <img
+            src="../images/icons/Vector (8).png"
+            className="img-location"
+          />
+          <p className="full-address "> 709 West Drive Chicago, IL 60606</p>
+        </div>
+        <div className="icons-details d-flex">
+          <div className="bed-2 d-flex">
+            <img
+              src="../images/icons/Vector (7).png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border"></div>
+            <p className="beds-3 ms-1">3 Beds</p>
+          </div>
+          <div className="bed-2 d-flex ms-3">
+            <img
+              src="../images/icons/Icon (2).png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border ms-1"></div>
+            <p className="beds-3 ms-1">2 Baths</p>
+          </div>
+          <div className="bed-2 d-flex ms-3">
+            <img
+              src="../images/icons/Icon.png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border ms-1"></div>
+            <p className="beds-3 ms-1">1 Parking</p>
+          </div>
+          <div className="bed-2 d-flex ms-3">
+            <img
+              src="../images/icons/Icon (1).png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border ms-1"></div>
+            <p className="beds-3 ms-1">120 sqft</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div className="house-photos-2 d-flex  justify-content-evenly align-items-center">
+    <div className="card" style={{ width: "18.8rem" }}>
+      <img
+        src="../images/icons/Group 18687.png"
+        className="img-whatsapp"
+        alt="..."
+      />
+      <div className="catbody justify-content-between align-items-center gap-5">
+        <h6 className="price-per-month mt-2 ">$2500/Mo</h6>
+        <div className="apartment  d-flex justify-content-between align-items-center">
+          <p className="comfort">Comfortable Apartment</p>
+          <button className="btn btn-sale mb-3">Sale</button>
+        </div>
+        <div className="address d-flex gap-1">
+          <img
+            src="../images/icons/Vector (8).png"
+            className="img-location"
+          />
+          <p className="full-address "> 709 West Drive Chicago, IL 60606</p>
+        </div>
+        <div className="icons-details d-flex">
+          <div className="bed-2 d-flex">
+            <img
+              src="../images/icons/Vector (7).png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border"></div>
+            <p className="beds-3 ms-1">3 Beds</p>
+          </div>
+          <div className="bed-2 d-flex ms-3">
+            <img
+              src="../images/icons/Icon (2).png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border ms-1"></div>
+            <p className="beds-3 ms-1">2 Baths</p>
+          </div>
+          <div className="bed-2 d-flex ms-3">
+            <img
+              src="../images/icons/Icon.png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border ms-1"></div>
+            <p className="beds-3 ms-1">1 Parking</p>
+          </div>
+          <div className="bed-2 d-flex ms-3">
+            <img
+              src="../images/icons/Icon (1).png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border ms-1"></div>
+            <p className="beds-3 ms-1">120 sqft</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="card" style={{ width: "18.8rem" }}>
+      <img
+        src="../images/icons/Group 18687.png"
+        className="img-whatsapp"
+        alt="..."
+      />
+      <div className="catbody justify-content-between align-items-center gap-5">
+        <h6 className="price-per-month mt-2 ">$2500/Mo</h6>
+        <div className="apartment  d-flex justify-content-between align-items-center">
+          <p className="comfort">Comfortable Apartment</p>
+          <button className="btn btn-sale mb-3">Sale</button>
+        </div>
+        <div className="address d-flex gap-1">
+          <img
+            src="../images/icons/Vector (8).png"
+            className="img-location"
+          />
+          <p className="full-address "> 709 West Drive Chicago, IL 60606</p>
+        </div>
+        <div className="icons-details d-flex">
+          <div className="bed-2 d-flex">
+            <img
+              src="../images/icons/Vector (7).png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border"></div>
+            <p className="beds-3 ms-1">3 Beds</p>
+          </div>
+          <div className="bed-2 d-flex ms-3">
+            <img
+              src="../images/icons/Icon (2).png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border ms-1"></div>
+            <p className="beds-3 ms-1">2 Baths</p>
+          </div>
+          <div className="bed-2 d-flex ms-3">
+            <img
+              src="../images/icons/Icon.png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border ms-1"></div>
+            <p className="beds-3 ms-1">1 Parking</p>
+          </div>
+          <div className="bed-2 d-flex ms-3">
+            <img
+              src="../images/icons/Icon (1).png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border ms-1"></div>
+            <p className="beds-3 ms-1">120 sqft</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="card" style={{ width: "18.8rem" }}>
+      <img
+        src="../images/icons/Group 18687.png"
+        className="img-whatsapp"
+        alt="..."
+      />
+      <div className="catbody justify-content-between align-items-center gap-5">
+        <h6 className="price-per-month mt-2 ">$2500/Mo</h6>
+        <div className="apartment  d-flex justify-content-between align-items-center">
+          <p className="comfort">Comfortable Apartment</p>
+          <button className="btn btn-sale mb-3">Sale</button>
+        </div>
+        <div className="address d-flex gap-1">
+          <img
+            src="../images/icons/Vector (8).png"
+            className="img-location"
+          />
+          <p className="full-address "> 709 West Drive Chicago, IL 60606</p>
+        </div>
+        <div className="icons-details d-flex">
+          <div className="bed-2 d-flex">
+            <img
+              src="../images/icons/Vector (7).png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border"></div>
+            <p className="beds-3 ms-1">3 Beds</p>
+          </div>
+          <div className="bed-2 d-flex ms-3">
+            <img
+              src="../images/icons/Icon (2).png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border ms-1"></div>
+            <p className="beds-3 ms-1">2 Baths</p>
+          </div>
+          <div className="bed-2 d-flex ms-3">
+            <img
+              src="../images/icons/Icon.png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border ms-1"></div>
+            <p className="beds-3 ms-1">1 Parking</p>
+          </div>
+          <div className="bed-2 d-flex ms-3">
+            <img
+              src="../images/icons/Icon (1).png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border ms-1"></div>
+            <p className="beds-3 ms-1">120 sqft</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="card" style={{ width: "18.8rem" }}>
+      <img
+        src="../images/icons/Group 18687.png"
+        className="img-whatsapp"
+        alt="..."
+      />
+      <div className="catbody justify-content-between align-items-center gap-5">
+        <h6 className="price-per-month mt-2 ">$2500/Mo</h6>
+        <div className="apartment  d-flex justify-content-between align-items-center">
+          <p className="comfort">Comfortable Apartment</p>
+          <button className="btn btn-sale mb-3">Sale</button>
+        </div>
+        <div className="address d-flex gap-1">
+          <img
+            src="../images/icons/Vector (8).png"
+            className="img-location"
+          />
+          <p className="full-address "> 709 West Drive Chicago, IL 60606</p>
+        </div>
+        <div className="icons-details d-flex">
+          <div className="bed-2 d-flex">
+            <img
+              src="../images/icons/Vector (7).png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border"></div>
+            <p className="beds-3 ms-1">3 Beds</p>
+          </div>
+          <div className="bed-2 d-flex ms-3">
+            <img
+              src="../images/icons/Icon (2).png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border ms-1"></div>
+            <p className="beds-3 ms-1">2 Baths</p>
+          </div>
+          <div className="bed-2 d-flex ms-3">
+            <img
+              src="../images/icons/Icon.png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border ms-1"></div>
+            <p className="beds-3 ms-1">1 Parking</p>
+          </div>
+          <div className="bed-2 d-flex ms-3">
+            <img
+              src="../images/icons/Icon (1).png"
+              className="img-bed"
+              alt=""
+            />
+            <div className="left-border ms-1"></div>
+            <p className="beds-3 ms-1">120 sqft</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
                 <div className="row icon-start-side-width">
                   <div className="icon-start-side">
                     <div className="side-first-icon">
@@ -249,8 +822,7 @@ const Products = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
+           
             {/* 2nd */}
             <div className="row">
               <div className="col-lg-3">

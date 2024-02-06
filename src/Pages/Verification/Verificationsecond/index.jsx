@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../../Componenets/Header";
-import "../Verificationsecond/Verificationsecond.css";
+import Header from "../../../Componenets/Header";
+import "./Verificationsecond.css";
 
 const Verificationsecond =()=>{
 return(
