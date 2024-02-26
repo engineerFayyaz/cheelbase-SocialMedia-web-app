@@ -1,11 +1,16 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import BusinessVerification from "./Pages/Verification/Verificationsixth";
+import { Navigate } from 'react-router';
+
+
+import { AuthProvider } from "./AuthContext";
 // import HomePage from "./Pages/Home";
 // import Home from "./Pages/Home";
 // import NotFound from "./Pages/NotFound";
-const Sidebar  = React.lazy(()=>import("../src/Componenets/Sidebar"));
 
+
+
+const Sidebar  = React.lazy(()=>import("../src/Componenets/Sidebar"));
 const Cheelzs =React.lazy(()=>import("./Pages/Cheelzs"));
 const Gallery = React.lazy(()=>import("./Pages/Gallery"));
 const Home =React.lazy(()=>import('./Pages/Home'));
@@ -59,6 +64,7 @@ const Chattingpage2 = React.lazy(()=>import('./Pages/Channels/Channelchattingpag
 const TooltipComponent = React.lazy(()=>import('./Componenets/TooltipComponent/TooltipComponent'));
 
 
+
 const Verificationprofileinformation = React.lazy(()=>import('./Pages/Verification/Verificationprofileinformation'));
 const ChannelMain = React.lazy(()=> import('./Pages/ChannelMain'));
 const VisitorProfile = React.lazy(()=>import('./Pages/VisitorProfile'));
@@ -109,15 +115,23 @@ const Compaignplacement = React.lazy(()=>import("./Pages/Compaign/Compaignplacem
 const Compaignlast = React.lazy(()=>import("./Pages/Compaign/Compaignlast"));
 
 const ProjectRoutes =()=>{
+   
+      
+        
+      
     return(
     <React.Suspense fallback={<>Loading...</>}>
         <Router>
+        <AuthProvider>
         <Routes>
-        <Route path="/Home" element={<Home/>}/>
         <Route path="/Cheelzs" element={<Cheelzs/>}/>
         <Route path="/Gallery" element={<Gallery/>}/>
-        <Route path="/" element={<Welcome/>}/>
-        <Route path="/QrCode" element={<QrCode/>}/>
+        <Route path="*" element={<Welcome/>} />
+        <Route path="/qrcode" element={<QrCode/>}/>
+        
+        <Route path="/Home" element={<Home/>}/>
+       
+
         <Route path="/LinkingDevice" element={<LinkingDevice/>}/>
         <Route path="/Verificationmain" element={<Verificationmain/>}/>
         <Route path="/Verification1" element={<Verification1/>}/>
@@ -218,8 +232,10 @@ const ProjectRoutes =()=>{
           
 
         </Routes>
+        </AuthProvider>
         </Router>
     </React.Suspense>
+    
     );
 }
 export default ProjectRoutes;

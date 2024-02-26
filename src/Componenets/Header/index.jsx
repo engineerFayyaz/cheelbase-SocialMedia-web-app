@@ -1,7 +1,9 @@
 import React from "react";
+import { useAuth } from '../../AuthContext';
 // import "../Header/Header.css"
 
 const Header = () => {
+  const { user, logout } = useAuth();
   return (
     <>
       <header>
@@ -146,19 +148,25 @@ const Header = () => {
               <i className="fa-solid fa-bell" />
             </div>
           </div>
-          <div className="user d-flex flex-row ">
-            <img
-              src="images/thubnail.jpeg"
-              alt="Chat 1"
-              className=" rounded-circle"
-              width={30}
-              height={30}
-            />
-            <label htmlFor="user" className="mt-1">
-              @marinaojak
-            </label>
+          <div className="user d-flex flex-row">
+            {user ? (
+              <>
+                <img
+                  src={user.image || 'default-image-url'}
+                  alt="User"
+                  className="rounded-circle"
+                  width={30}
+                  height={30}
+                />
+                <label htmlFor="user" className="mt-1">
+                  {user.fullname}
+                </label>
+              </>
+            ) : (
+              <span>No user logged in</span>
+            )}
           </div>
-          <div className="lines">
+        <div className="lines">
             <li className="dropdown dropstart account-dropdown">
               <i
                 className="fa-solid fa-ellipsis-vertical dropdown"

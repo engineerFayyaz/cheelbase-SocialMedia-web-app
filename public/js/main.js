@@ -1,3 +1,4 @@
+
 const allStories = [
   {
     id: 0,
@@ -78,120 +79,60 @@ const allStories = [
   },
 ];
 
-const stories = document.querySelector(".stories");
-// const storyThumbnails = document.querySelectorAll(".story .thumbnail"); // Select all thumbnails
-const storiesFullView = document.querySelector(".stories-full-view");
-const closeBtn = document.querySelector(".close-btn");
-const storyImageFull = document.querySelector(".stories-full-view .story img");
-const storyAuthorFull = document.querySelector(".stories-full-view .story .author");
-const nextBtn = document.querySelector(".stories-container .next-btn");
-const previousBtn = document.querySelector(".stories-container .previous-btn");
-const storiesContent = document.querySelector(".stories-container .content");
-const nextBtnFull = document.querySelector(".stories-full-view .next-btn");
-const previousBtnFull = document.querySelector(".stories-full-view .previous-btn");
+// const stories = document.querySelector(".stories");
+// // const storyThumbnails = document.querySelectorAll(".story .thumbnail"); // Select all thumbnails
+// const storiesFullView = document.querySelector(".stories-full-view");
+// const closeBtn = document.querySelector(".close-btn");
+// const storyImageFull = document.querySelector(".stories-full-view .story img");
+// const storyAuthorFull = document.querySelector(".stories-full-view .story .author");
+// const nextBtn = document.querySelector(".stories-container .next-btn");
+// const previousBtn = document.querySelector(".stories-container .previous-btn");
+// const storiesContent = document.querySelector(".stories-container .content");
+// const nextBtnFull = document.querySelector(".stories-full-view .next-btn");
+// const previousBtnFull = document.querySelector(".stories-full-view .previous-btn");
 
-let currentActive = 0;
+// let currentActive = 0;
 
-const createStories = () => {
-  allStories.forEach((s, i) => {
-    const story = document.createElement("div");
-    story.classList.add("story");
-    const author = document.createElement("div");
-    author.classList.add("author");
+const Stories = () => {
+  const [currentActive, setCurrentActive] = useState(null);
+  
+  const showFullView = (index) => {
+    setCurrentActive(index);
+  };
 
-    // Check if it's the first story and customize it
-    // if (i === 0) {
-    //   story.style.borderRadius = "5px"; // Remove the border radius
-    //   story.style.height="165px";
-    //   author.style.display = "none"
-    //   story.style.display = "flex";
-    //   story.style.alignItems = "center"; // Center vertically
-    //   story.style.justifyContent = "center";
-    //   story.style.backgroundColor = "#FCC810"; // Set the background color
-    //   const icon = document.createElement("i");
-    //   icon.classList.add("fas", "fa-plus");
-    //   icon.style.fontSize = "36px"; // Set the font size to make it larger
-    //   icon.style.backgroundColor = "white";
-    //   icon.style.padding = "10px";
-    //   icon.style.borderRadius = "50%"; // Set the icon background color to white
-    //   icon.style.color = "blue"; // Set the icon color to yellow
-    //   story.appendChild(icon); // Append the icon directly to the story element
+  const closeFullView = () => {
+    setCurrentActive(null);
+  };
 
-    // } else {
-    // }
-    const img = document.createElement("img");
-    img.src = s.imageUrl;
-    story.appendChild(img);
+  const createStories = () => {
+    return (
+      <div>
+        <div className="stories">
+          {allStories.map((story, index) => (
+            <div key={index} className="story" onClick={() => showFullView(index)}>
+              <img src={story.imageUrl} alt={story.author} />
+              <div className="author">{story.author}</div>
+            </div>
+          ))}
+        </div>
 
-    author.innerHTML = s.author;
-    story.appendChild(author);
+        {currentActive !== null && (
+          <div className="stories-full-view">
+            <div className="story">
+              <img src={allStories[currentActive].imageUrl} alt={allStories[currentActive].author} />
+              <div className="author">{allStories[currentActive].author}</div>
+            </div>
+            <button className="close-btn" onClick={closeFullView}>
+              Close
+            </button>
+          </div>
+        )}
+      </div>
+    );
+  };
 
-    stories.appendChild(story);
-
-    story.addEventListener("click", () => {
-      showFullView(i);
-    });
-  });
+  return createStories();
 };
 
-
-
-
-
-createStories();
-
-const showFullView = (index) => {
-  currentActive = index;
-  updateFullView();
-  storiesFullView.classList.add("active");
-};
-
-closeBtn.addEventListener("click", () => {
-  storiesFullView.classList.remove("active");
-});
-
-const updateFullView = () => {
-  storyImageFull.src = allStories[currentActive].imageUrl;
-  storyAuthorFull.innerHTML = allStories[currentActive].author;
-};
-
-nextBtn.addEventListener("click", () => {
-  storiesContent.scrollLeft += 300;
-});
-
-previousBtn.addEventListener("click", () => {
-  storiesContent.scrollLeft -= 300;
-});
-
-storiesContent.addEventListener("scroll", () => {
-  if (storiesContent.scrollLeft <= 24) {
-    previousBtn.classList.remove("active");
-  } else {
-    previousBtn.classList.add("active");
-  }
-
-  let maxScrollValue =
-    storiesContent.scrollWidth - storiesContent.clientWidth - 24;
-  if (storiesContent.scrollLeft >= maxScrollValue) {
-    nextBtn.classList.remove("active");
-  } else {
-    nextBtn.classList.add("active");
-  }
-});
-
-nextBtnFull.addEventListener("click", () => {
-  if (currentActive >= allStories.length - 1) {
-    return;
-  }
-  currentActive++;
-  updateFullView();
-});
-
-previousBtnFull.addEventListener("click", () => {
-  if (currentActive <= 0) {
-    return;
-  }
-  currentActive--;
-  updateFullView();
-});
+export default Stories;
 

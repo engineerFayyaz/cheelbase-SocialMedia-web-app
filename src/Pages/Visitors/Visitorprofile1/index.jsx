@@ -10,16 +10,15 @@ const Visitorprofile1 = () => {
   <div className="container-fluid">
     <div className="row">
       <div className="col-lg-12 col-md-12 col-sm height-main">
-        <img
-          className="vist-img"
-          src="../images/Rectangle 1128.png"
-          alt=""
-        />
-        <img
-          className="vist-img-position"
-          src="../images/Group 3465296.png"
-          alt=""
-        />
+        <div className="vist-img">
+        <div className="visit-img-position">
+       
+        <img src="../images/icons/add_circle (1).png"  className="img-circle "  id="customButton"
+                            onclick="document.getElementById('input-file').click()" alt="" />
+                          
+                        <input type="file" id="input-file" className="" />
+        </div>
+
         <img className="vist-avtar" src="../images/Avatar.png" alt="" />
         <div className="btn-containter">
           <label className="btn-view" htmlFor="#">
@@ -29,6 +28,12 @@ const Visitorprofile1 = () => {
             share
           </label>
         </div>
+        </div>
+        
+
+       
+       
+      
       </div>
     </div>
     <div className="row width-row my-5">
