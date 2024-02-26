@@ -17,8 +17,6 @@ const Home =()=>{
         <Sidebar/>
         <Stories/>
         <RightSideBar/>
-        <Gallery/>
-        <Properties/>
         </div>
         </div>
        

@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-
-import bootstrap from 'bootstrap/dist/js/bootstrap.bundle.min.js';  // Import Bootstrap JavaScript
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';  // Import Bootstrap JavaScript
 
     const TooltipComponent = () => {
         useEffect(() => {

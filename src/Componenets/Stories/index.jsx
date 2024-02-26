@@ -155,35 +155,89 @@ const Stories = () => {
   </div>
   {/* stories main ends  */}
   {/* icons section start */}
+  <div>
   <div className="container-fluid  icon-section">
-    <a href="#">
-      {/* <i class="fa-regular fa-images"></i> */}
-      <img src="images/vibration.png" alt="" />
-      <p>Cheels</p>
+    <a
+      href="javascript:void(0);"
+      id="icon-btn"
+      onclick="changeBackground()"
+    >
+      <img
+        alt=""
+        src="images/vibration.png"
+      />
+      <p>
+        Cheels
+      </p>
     </a>
-    <a href="#">
-      {" "}
-      <img src="images/video.png" alt="" />
-      <p>Video</p>
+    <a
+      href="javascript:void(0);"
+      id="icon-btn"
+      onclick="changeBackground()"
+    >
+      {' '}
+      <img
+        alt=""
+        src="images/icons/video-icon-thumb.png"
+      />
+      <p>
+        Video
+      </p>
     </a>
-    <a href="#">
-      {/* <i class="fa-regular fa-images"></i> */}
-      <img src="images/vibration.png" alt="" />
-      <p>Gallery</p>
+    <a
+      href="javascript:void(0);"
+      id="icon-btn"
+      onclick="changeBackground()"
+    >
+      <img
+        alt=""
+        src="images/icons/picture-gallery-thumb.png"
+      />
+      <p>
+        Gallery
+      </p>
     </a>
-    <a href="#">
-      <img src="images/burger.png" alt="" />
-      <p>Resturants</p>
+    <a
+      href="javascript:void(0);"
+      id="icon-btn"
+      onclick="changeBackground()"
+    >
+      <img
+        alt=""
+        src="images/burger.png"
+      />
+      <p>
+        Resturants
+      </p>
     </a>
-    <a href="#">
-      <img src="images/shopping-cart.png" alt="" />
-      <p>Shop</p>
+    <a
+      href="javascript:void(0);"
+      id="icon-btn"
+      onclick="changeBackground()"
+    >
+      <img
+        alt=""
+        src="images/shopping-cart.png"
+      />
+      <p>
+        Shop
+      </p>
     </a>
-    <a href="#">
-      <img src="images/camping-tent.png" alt="" />
-      <p>Properties</p>
+    <a
+      href="javascript:void(0);"
+      id="icon-btn"
+      onclick="changeBackground()"
+    >
+      <img
+        alt=""
+        src="images/camping-tent.png"
+      />
+      <p>
+        Properties
+      </p>
     </a>
   </div>
+</div>
   {/* icons section ends */}
   {/* channel section starts  */}
   <div className="container-fluid channels-section">
@@ -231,7 +285,7 @@ const Stories = () => {
   </div>
   {/* find-Channels ends */}
   {/* products section start */}
-  <div className="container-fluid products section">
+  <div className="container-fluid products-section">
     <div className="container d-flex justify-content-end align-items-center ">
       <button type="button" className="btn view-btn">
         View all
@@ -368,87 +422,435 @@ const Stories = () => {
   {/* section cheel end */}
   {/* section order start */}
   <div className="container-fluid ">
-    <div className="container d-flex justify-content-between order">
-      <div className="h4">Order Food</div>
+  <div className="container d-flex justify-content-between topcheel">
+    <div className="h4">
+      Order Food
+    </div>
+    <a href="">
+      <button
+        className="btn"
+        type="button"
+      >
+        View all
+      </button>
+    </a>
+  </div>
+  <div className="row gap-3 order-columns-home">
+    <div
+      className=" col-sm card cards-home"
+      style={{
+        width: '18rem'
+      }}
+    >
+      <img
+        alt="..."
+        className="card-img-top"
+        src="images/order food.jpg"
+      />
+      <div className="card-body">
+        <h5 className="card-title d-flex justify-content-between">
+          Burger{' '}
+          <span>
+            $3.49
+          </span>
+        </h5>
+        <p className="card-text">
+          This is my whole description for the whole me
+        </p>
+        <div className="more d-flex justify-content-between align-items-center">
+          <a href="#">
+            more
+          </a>
+          <a href="#">
+            <span>
+              <i className="fab fa-whatsapp" />
+            </span>
+            <span>
+              <i className="fas fa-shopping-cart" />
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className=" col-sm card cards-home"
+      style={{
+        width: '18rem'
+      }}
+    >
+      <img
+        alt="..."
+        className="card-img-top"
+        src="images/order food.jpg"
+      />
+      <div className="card-body">
+        <h5 className="card-title d-flex justify-content-between">
+          Burger{' '}
+          <span>
+            $3.49
+          </span>
+        </h5>
+        <p className="card-text">
+          This is my whole description for the whole me
+        </p>
+        <div className="more d-flex justify-content-between align-items-center">
+          <a href="#">
+            more
+          </a>
+          <a href="#">
+            <span>
+              <i className="fab fa-whatsapp" />
+            </span>
+            <span>
+              <i className="fas fa-shopping-cart" />
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className=" col-sm card cards-home"
+      style={{
+        width: '18rem'
+      }}
+    >
+      <img
+        alt="..."
+        className="card-img-top"
+        src="images/order food.jpg"
+      />
+      <div className="card-body">
+        <h5 className="card-title d-flex justify-content-between">
+          Burger{' '}
+          <span>
+            $3.49
+          </span>
+        </h5>
+        <p className="card-text">
+          This is my whole description for the whole me
+        </p>
+        <div className="more d-flex justify-content-between align-items-center">
+          <a href="#">
+            more
+          </a>
+          <a href="#">
+            <span>
+              <i className="fab fa-whatsapp" />
+            </span>
+            <span>
+              <i className="fas fa-shopping-cart" />
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  {/* section order end */}
+
+  {/* Gallery SEction starts  */}
+  <div className="container-fluid ">
+    <div className="container d-flex justify-content-between topcheel">
+      <div className="h4">
+        Feautred Gallery
+      </div>
       <a href="">
-        <button type="button" className="btn1">
+        <button
+          className="btn"
+          type="button"
+        >
           View all
         </button>
       </a>
     </div>
-    <div className="row order-columns">
-      <div className="col-sm-4">
-        <img
-          src="images/order food.jpg"
-          width="110px"
-          className="rounded-circle"
-          alt="image"
-        />
-        <div className="d-flex justify-content-between">
-          <p>
-            <b>$40.0</b>
-          </p>
-          <p>
-            <i className="fa-solid fa-star" />
-            <b>5.0</b>
-          </p>
+    <div className="row gap-1 order-columns-home">
+      <div className="col-sm card p-1">
+        <div className="container-fluid d-flex justify-content-between gallery-contact">
+          <div className="d-flex">
+            <img
+              alt="Chat 1"
+              className="chat-image"
+              src="images/gallery dp.png"
+            />
+            <div className="profile-content">
+              <span className="profile-name">
+                Camilla
+              </span>
+              <p className="text-muted">
+                Mexico City, Mexico
+              </p>
+            </div>
+          </div>
+          <div className="tticon">
+            <i className="fa-solid fa-ellipsis">
+              {' '}
+            </i>
+          </div>
         </div>
-        <div className="h4">Healty Salad</div>
-        <a href="">
-          <button type="button" className="btn">
-            Order Now <i className="fa-solid fa-arrow-right" />
-          </button>
-        </a>
+        <div className="gallery-image">
+          <a href="gallerysinglepage.html">
+            <img
+              alt="gallery-image"
+              src="images/Gallery-image.png"
+              width="100%"
+            />
+          </a>
+        </div>
+        <div className="gallery-icon d-flex align-items-center justify-content-between p-2 pt-2 pb-0">
+          <div>
+            <div className="btn">
+              <i className="fa-solid fa-heart">
+                {' '}5.4K
+              </i>
+            </div>
+            <i className="fas fa-comment">
+              {' '}165
+            </i>
+            <i className="fas fa-paper-plane" />
+          </div>
+          <div className="download-icons">
+            <i className="fas fa-download" />
+            <i className="fas fa-bookmark" />
+          </div>
+        </div>
+        <div className="gallery-footer mt-1 d-flex align-items-center justify-content-between">
+          <div className="images d-flex align-items-center justify-content-between gap-2">
+            <div className="footer-images d-flex align-items-center justify-content-around">
+              <img
+                alt="Chat 1"
+                className="footer-image1"
+                src="images/gallery dp.png"
+              />
+              <img
+                alt="Chat 1"
+                className="footer-image2"
+                src="images/Ellipse 7.png"
+              />
+              <img
+                alt="Chat 1"
+                className="footer-image3"
+                src="images/Ellipse 8.png"
+              />
+            </div>
+            <div className="footer-title">
+              Aaron, Hank Adams, John, William...
+            </div>
+          </div>
+          <div className="gallery-footer-btn">
+            more
+          </div>
+        </div>
       </div>
-      <div className="col-sm-4">
-        <img
-          src="images/order food.jpg"
-          width="110px"
-          className="rounded-circle"
-          alt="image"
-        />
-        <div className="d-flex justify-content-between">
-          <p>
-            <b>$40.0</b>
-          </p>
-          <p>
-            <i className="fa-solid fa-star" />
-            <b>5.0</b>
-          </p>
+      <div className="col-sm card p-1">
+        <div className="container-fluid d-flex justify-content-between gallery-contact">
+          <div className="d-flex">
+            <img
+              alt="Chat 1"
+              className="chat-image"
+              src="images/gallery dp.png"
+            />
+            <div className="profile-content">
+              <span className="profile-name">
+                Camilla
+              </span>
+              <p className="text-muted">
+                Mexico City, Mexico
+              </p>
+            </div>
+          </div>
+          <div className="tticon">
+            <i className="fa-solid fa-ellipsis">
+              {' '}
+            </i>
+          </div>
         </div>
-        <div className="h4">Healty Salad</div>
-        <a href="">
-          <button type="button" className="btn">
-            Order Now <i className="fa-solid fa-arrow-right" />
-          </button>
-        </a>
+        <div className="gallery-image">
+          <a href="gallerysinglepage.html">
+            <img
+              alt="gallery-image"
+              src="images/Gallery-image.png"
+              width="100%"
+            />
+          </a>
+        </div>
+        <div className="gallery-icon d-flex align-items-center justify-content-between p-2 pt-2 pb-0">
+          <div>
+            <div className="btn">
+              <i className="fa-solid fa-heart">
+                {' '}5.4K
+              </i>
+            </div>
+            <i className="fas fa-comment">
+              {' '}165
+            </i>
+            <i className="fas fa-paper-plane" />
+          </div>
+          <div className="download-icons">
+            <i className="fas fa-download" />
+            <i className="fas fa-bookmark" />
+          </div>
+        </div>
+        <div className="gallery-footer mt-1 d-flex align-items-center justify-content-between">
+          <div className="images d-flex align-items-center justify-content-between gap-2">
+            <div className="footer-images d-flex align-items-center justify-content-around">
+              <img
+                alt="Chat 1"
+                className="footer-image1"
+                src="images/gallery dp.png"
+              />
+              <img
+                alt="Chat 1"
+                className="footer-image2"
+                src="images/Ellipse 7.png"
+              />
+              <img
+                alt="Chat 1"
+                className="footer-image3"
+                src="images/Ellipse 8.png"
+              />
+            </div>
+            <div className="footer-title">
+              Aaron, Hank Adams, John, William...
+            </div>
+          </div>
+          <div className="gallery-footer-btn">
+            more
+          </div>
+        </div>
       </div>
-      <div className="col-sm-4">
-        <img
-          src="images/order food.jpg"
-          width="110px"
-          className="rounded-circle"
-          alt="image"
-        />
-        <div className="d-flex justify-content-between">
-          <p>
-            <b>$40.0</b>
-          </p>
-          <p>
-            <i className="fa-solid fa-star" />
-            <b>5.0</b>
-          </p>
+      <div className="col-sm card p-1">
+        <div className="container-fluid d-flex justify-content-between gallery-contact">
+          <div className="d-flex">
+            <img
+              alt="Chat 1"
+              className="chat-image"
+              src="images/gallery dp.png"
+            />
+            <div className="profile-content">
+              <span className="profile-name">
+                Camilla
+              </span>
+              <p className="text-muted">
+                Mexico City, Mexico
+              </p>
+            </div>
+          </div>
+          <div className="tticon">
+            <i className="fa-solid fa-ellipsis">
+              {' '}
+            </i>
+          </div>
         </div>
-        <div className="h4">Healty Salad</div>
-        <a href="">
-          <button type="button" className="btn">
-            Order Now <i className="fa-solid fa-arrow-right" />
-          </button>
-        </a>
+        <div className="gallery-image">
+          <a href="gallerysinglepage.html">
+            <img
+              alt="gallery-image"
+              src="images/Gallery-image.png"
+              width="100%"
+            />
+          </a>
+        </div>
+        <div className="gallery-icon d-flex align-items-center justify-content-between p-2 pt-2 pb-0">
+          <div>
+            <div className="btn">
+              <i className="fa-solid fa-heart">
+                {' '}5.4K
+              </i>
+            </div>
+            <i className="fas fa-comment">
+              {' '}165
+            </i>
+            <i className="fas fa-paper-plane" />
+          </div>
+          <div className="download-icons">
+            <i className="fas fa-download" />
+            <i className="fas fa-bookmark" />
+          </div>
+        </div>
+        <div className="gallery-footer mt-1 d-flex align-items-center justify-content-between">
+          <div className="images d-flex align-items-center justify-content-between gap-2">
+            <div className="footer-images d-flex align-items-center justify-content-around">
+              <img
+                alt="Chat 1"
+                className="footer-image1"
+                src="images/gallery dp.png"
+              />
+              <img
+                alt="Chat 1"
+                className="footer-image2"
+                src="images/Ellipse 7.png"
+              />
+              <img
+                alt="Chat 1"
+                className="footer-image3"
+                src="images/Ellipse 8.png"
+              />
+            </div>
+            <div className="footer-title">
+              Aaron, Hank Adams, John, William...
+            </div>
+          </div>
+          <div className="gallery-footer-btn">
+            more
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  {/* section order end */}
+  {/* Gallery section ends */}
+
+  {/* Section order starts */}
+  <div className="container-fluid ">
+  <div className="container d-flex justify-content-between topcheel">
+    <div className="h4">
+      Feautred Video
+    </div>
+    <a href="">
+      <button
+        className="btn"
+        type="button"
+      >
+        Watch More
+      </button>
+    </a>
+  </div>
+  <div className="row gap-3 order-columns-home">
+    <div className="col-sm">
+      <iframe
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+        frameBorder="0"
+        height="250px"
+        src="https://www.youtube.com/embed/o1fWvomcXt8?si=Hhf6epxhwFAZu__y"
+        title="YouTube video player"
+        width="100%"
+      />
+    </div>
+    <div className="col-sm">
+      <iframe
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+        frameBorder="0"
+        height="250px"
+        src="https://www.youtube.com/embed/o1fWvomcXt8?si=Hhf6epxhwFAZu__y"
+        title="YouTube video player"
+        width="100%"
+      />
+    </div>
+    <div className="col-sm">
+      <iframe
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+        frameBorder="0"
+        height="250px"
+        src="https://www.youtube.com/embed/o1fWvomcXt8?si=Hhf6epxhwFAZu__y"
+        title="YouTube video player"
+        width="100%"
+      />
+    </div>
+  </div>
+</div>
+  {/* Section orders ends */}
 </div>
 
     </>
