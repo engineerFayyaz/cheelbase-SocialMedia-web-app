@@ -270,10 +270,10 @@ margin-top: 5px;
    margin-left: 10px;
 }
 
-.video{
+#video{
     height: 360px;
 }
-.video img{
+#video img{
     height: 100%;
 }
 .video .btn{

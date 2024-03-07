@@ -1,36 +1,49 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Header from "../../../Componenets/Header";
 import '../Verificationmain/Verificationmain.css';
 
 const Verificationmain = () => {
+  const [localUser, setLocalUser] = useState(null);
+
+  useEffect(() => {
+    const localUserData = localStorage.getItem("user");
+    if (localUserData) {
+      setLocalUser(JSON.parse(localUserData));
+    }
+  }, []);
     return(
         <>
         <Header/>
         <div className="container-fluid verification-main">
   <div className="row d-flex align-items-center gap-4">
     <div className="col-md p-3 phone-verification-col-1">
-      <a href="javascript:void(0);" className="back-arrow" onclick="goBack()">
+      <a href="javascript:void(0);" className="back-arrow" onClick={() => window.history.back()}>
         <i className="fa-solid fa-arrow-left" />
       </a>
       <div className=" p-5">
         <h4 className="title">Profile Verification</h4>
         <div className="profile-box d-flex  p-3 align-items-center gap-4">
-          <div className="image">
+          {localUser && (
+            <>
+              <div className="image">
             <img
-              src="../../images/verification-man.jpg"
-              alt=""
-              width={55}
+              src={localUser.image}
+              alt={localUser.fullname}
+              width={60}
               height={70}
               className="rounded-circle"
             />
             <i className="fa-solid fa-check" />
           </div>
           <div className="content">
-            <h6>Vicent Roy</h6>
+            <h6>{localUser.fullname}</h6>
             <a href="javascript:void(0);">
               <h5>Verification of the profile!</h5>
             </a>
           </div>
+            </>
+          )}
+        
         </div>
         <p className="mx-2">Benefits of Verified cheelbase account</p>
         <ul>
@@ -72,10 +85,12 @@ const Verificationmain = () => {
       </div>
       <div className="p-5">
         <div className="profile-box d-flex flex-column  p-3 align-items-center gap-3">
-          <div className="image">
+          {localUser && (
+            <>
+            <div className="image">
             <img
-              src="../../images/verification-man.jpg"
-              alt=""
+              src={localUser.image}
+              alt={localUser.fullname}
               width={100}
               height={100}
               className="rounded-circle"
@@ -83,13 +98,16 @@ const Verificationmain = () => {
           </div>
           <div className="content text-center">
             <h6>
-              Vicent Roy{" "}
+            {localUser.fullname}
               <span>
                 <i className="fa-solid fa-check" />
               </span>
             </h6>
             <h5>Subscribed since june 2023</h5>
           </div>
+            </>
+          )}
+          
         </div>
         <ul>
           <li className="d-flex align-items-center gap-4">

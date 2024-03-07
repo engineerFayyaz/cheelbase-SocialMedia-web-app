@@ -5,7 +5,7 @@ const Stories = () => {
     <>
      <div className="col-6 center-main">
   {/* /// stories main starts  */}
-  <div className=".container-fluid stories-main">
+  <div className=" stories-main">
     <div className="stories-container">
       <div className="content">
         <div className="previous-btn active">

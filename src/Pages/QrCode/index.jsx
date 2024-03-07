@@ -1,27 +1,30 @@
 import React, { useState } from "react";
 import "../QrCode/cheelbase-qr.css";
-import { collection, addDoc } from 'firebase/firestore';
+import { collection, addDoc } from "firebase/firestore";
 import { saveUser } from "../../firebase/Api";
-import QRCode from 'qrcode.react';
-import { db, imageDb } from '../../firebase/Config';
-import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../../AuthContext';
+import QRCode from "qrcode.react";
+import { db, imageDb } from "../../firebase/Config";
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../AuthContext";
 import { v4 } from "uuid";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Header from "../../Componenets/Header";
 
 const QrCode = () => {
   const [qrCodeData, setQrCodeData] = useState(null);
-  const [fullname, setFullName] = useState('');
-  const [verificationCode, setVerificationCode] = useState('');
+  const [fullname, setFullName] = useState("");
+  const [verificationCode, setVerificationCode] = useState("");
   const [img, setImg] = useState(null);
-  const { login } = useAuth(); 
+  const { login } = useAuth();
   const navigate = useNavigate();
-
+  const [user, setUser] = useState(null); // State to hold user information
   const generateQRCode = async () => {
     const randomCode = Math.floor(100000 + Math.random() * 900000).toString();
 
     try {
-      const docRef = await addDoc(collection(db, 'cheelbase'), {
+      const docRef = await addDoc(collection(db, "cheelbase"), {
         code: randomCode,
         timestamp: new Date(),
       });
@@ -29,16 +32,18 @@ const QrCode = () => {
       const qrData = JSON.stringify({ id: docRef.id, code: randomCode });
       setQrCodeData(qrData);
     } catch (error) {
-      console.error('Error generating QR code:', error);
+      console.error("Error generating QR code:", error);
     }
   };
 
-  const handleClick = async () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const isverified = handleVerification();
+
     try {
       const imageId = v4();
       const imgRef = ref(imageDb, `files/${imageId}`);
       await uploadBytes(imgRef, img);
-
       const downloadURL = await getDownloadURL(imgRef);
 
       // Save user data with image URL and QR code
@@ -48,39 +53,57 @@ const QrCode = () => {
         qrCode: qrCodeData,
       });
 
-      // Log in the user after saving data
-      login();
-      navigate('/home');
+      console.log('User data:', user);
+      if (isverified) {
+        // Log in the user after saving data
+        toast.success("Navigating to cheelbase Official please wait😊");
+        login();
+        navigate("/home");
 
-    } catch (error) {
-      console.error('Error uploading image:', error);
+        // Save user data to localStorage
+        localStorage.setItem("user", JSON.stringify({
+          fullname: fullname,
+          image: downloadURL,
+        }));
+      }
+    } 
+    catch (error) {
+      console.error("Error uploading image:", error);
     }
   };
 
   const handleVerification = () => {
     try {
       const parsedQrData = JSON.parse(qrCodeData);
-      console.log('Verification Code:', verificationCode);
-      console.log('Parsed QR Code Data:', parsedQrData);
-  
-      setVerificationCode(parsedQrData.code);
-  
-      if (verificationCode === parsedQrData.code) {
-        login();
-        navigate('/home');
+      console.log("Verification Code:", verificationCode);
+      console.log("Parsed QR Code Data:", parsedQrData);
+
+      
+      if (!verificationCode) {
+        toast.error("Please enter the verification code");
+        return false;
+      } else if (verificationCode === parsedQrData.code) {
+        toast.success("Code verified Successfully");
+        return true;
       } else {
-        console.error('Invalid Credentials, Try again later');
+        toast.error(
+          "Code is incorrect, please again enter the verification code "
+        );
+        return false;
       }
     } catch (error) {
-      console.error('Error parsing QR code data:', error);
+      console.error("Error parsing QR code data:", error);
+      toast.error("Error parsing QR code data");
+      return false;
     }
   };
-  
 
   return (
     <div>
       {!qrCodeData ? (
-        <button onClick={generateQRCode} className="qrcode">Generate QR Code</button>
+        <button onClick={generateQRCode} className="qrcode">
+          Generate QR Code
+        </button>
       ) : (
         <>
           <div className="container-sm qr-main p-5 sm-p-0 rounded-3">
@@ -110,15 +133,15 @@ const QrCode = () => {
                   </span>
                 </div>
               </div>
-              <div className="col-5 text-center p-5">
+              {/* <div className="col-5 text-center p-5">
                 <QRCode value={qrCodeData} height={100} width={1000} />
                 <div className="d-flex">
                   <label>
                     Verify your Code:
                     <input
                       type="text"
-                      value={verificationCode}
-                      onChange={(e) => setVerificationCode(e.target.value)}
+                      required
+                      onChange={(e) => setVerificationCode(e.target.value) }
                     />
                   </label>
                   <button onClick={handleVerification} className="verify">Verify</button>
@@ -132,6 +155,46 @@ const QrCode = () => {
                   <input type="file" onChange={(e) => setImg(e.target.files[0])} />
                   <button onClick={handleClick}>Upload Image</button>
                 </div>
+              </div> */}
+
+              <div className="col-5 text-center p-5">
+                <QRCode value={qrCodeData} height={100} width={1000} />
+                <div className="d-flex">
+                  <label>
+                    Verify your Code:
+                    <input
+                      type="text"
+                      required
+                      value={verificationCode}
+                      onChange={(e) => setVerificationCode(e.target.value)}
+                    />
+                  </label>
+                  <button onClick={handleVerification} className="verify">
+                    Verify
+                  </button>
+                </div>
+                <ToastContainer />
+                <form onSubmit={handleSubmit}>
+           
+                  <div className="fullname">
+                    <label htmlFor="fullname">Enter Full Name</label>
+                    <input
+                      type="text"
+                      name="fullname"
+                      // value={fullname}
+                      onChange={(e) => setFullName(e.target.value)}
+                      required
+                    />
+                  </div>
+                  <div className="image">
+                    <input
+                      type="file"
+                      onChange={(e) => setImg(e.target.files[0])}
+                      required
+                    />
+                  </div>
+                  <button type="submit">Submit</button>
+                </form>
               </div>
             </div>
           </div>

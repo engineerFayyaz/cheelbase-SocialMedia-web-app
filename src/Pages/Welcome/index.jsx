@@ -17,7 +17,7 @@ const Welcome =()=>{
       Free <span>and</span> Secure
     </h4>
     <div className="get-started-btn mt-4">
-      <a href="/QrCode" className="btn " target="_blank">
+      <a href="/QrCode" className="btn " target="_parent">
         Get Started
       </a>
     </div>

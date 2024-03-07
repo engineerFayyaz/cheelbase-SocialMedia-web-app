@@ -10,7 +10,7 @@ const Verificationsixth = () => {
         <div className="container-fluid verification-identity-main">
   <div className="row pt-3  verification-identity ">
     <div className="col-md verification-content ">
-      <a href="javascript:void(0);" className="back-arrow" onclick="goBack()">
+      <a href="javascript:void(0);" className="back-arrow" onClick={() => window.history.back()}>
         <i className="fa-solid fa-arrow-left back-arrow" />
       </a>
       <div className="business-verification  ">

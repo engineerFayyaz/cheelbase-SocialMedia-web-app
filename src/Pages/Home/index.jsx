@@ -11,17 +11,14 @@ const Home =()=>{
     return(
       
         <div>
-        <div className="container-fliud container-width">
-        <div className="row">
         <Header/>
+        <div className="container-fliud ">
+        <div className="row">
         <Sidebar/>
         <Stories/>
         <RightSideBar/>
         </div>
         </div>
-       
-    
-       
          </div>
     );
 }

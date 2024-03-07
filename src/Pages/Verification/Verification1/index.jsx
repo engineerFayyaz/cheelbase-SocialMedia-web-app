@@ -3,6 +3,8 @@ import Header from "../../../Componenets/Header";
 import './Verification1.css';
 
 const Verification1=()=>{
+
+  
     return(
         <>
        
@@ -10,7 +12,7 @@ const Verification1=()=>{
             <div className="container-fluid verification-profile-main">
   <div className="row pt-5  verification-profile ">
     <div className="col-md verification-content ">
-      <a href="javascript:void(0);" className="back-arrow" onclick="goBack()">
+      <a href="javascript:void(0);" className="back-arrow" onClick={() => window.history.back()}>
         <i className="fa-solid fa-arrow-left back-arrow" />
       </a>
       <div className="profile-title-box ">

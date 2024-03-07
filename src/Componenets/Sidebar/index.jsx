@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Sidebar = () => {
   return (
     <>
-      <div className="col-md-3 left-sidebar-main ">
+      <div className="col-md-3 left-sidebar-main ps-3">
   <div className="searchbar d-flex align-items-center mt-0">
     <li className="dropdown account-dropdown">
       <i
@@ -27,7 +27,7 @@ const Sidebar = () => {
             width={25}
           />
         </div>
-        <a className="dropdown-item" href="/VisitorProfile">
+        <Link className="dropdown-item"  to="/VisitorProfile">
           <img
             src="images/icons/user.png"
             alt=""
@@ -35,8 +35,8 @@ const Sidebar = () => {
             className="mx-3"
           />{" "}
           Profile
-        </a>
-        <a className="dropdown-item" href="/ChannelMain">
+        </Link>
+        <Link className="dropdown-item" to="/ChannelMain">
           <img
             src="images/icons/shortcut-script-app.png"
             className="mx-3"
@@ -44,8 +44,8 @@ const Sidebar = () => {
             width={25}
           />
           Cheels
-        </a>
-        <a className="dropdown-item" href="/FullVideo">
+        </Link>
+        <Link className="dropdown-item" to="/FullVideo">
           <img
             src="images/icons/tv-monitor.png"
             alt=""
@@ -53,8 +53,8 @@ const Sidebar = () => {
             width={25}
           />
           Full Video
-        </a>
-        <a className="dropdown-item" href="/Gallery">
+        </Link>
+        <Link className="dropdown-item" to="/Gallery">
           <img
             src="images/icons/picture.png"
             alt=""
@@ -62,8 +62,8 @@ const Sidebar = () => {
             width={25}
           />
           Gallery
-        </a>
-        <a className="dropdown-item" href="/Resturants">
+        </Link>
+        <Link className="dropdown-item" to="/Resturants">
           <img
             src="images/icons/conveyor-belt.png"
             className="mx-3"
@@ -71,8 +71,8 @@ const Sidebar = () => {
             width={25}
           />
           Resturants{" "}
-        </a>
-        <a className="dropdown-item" href="/Products">
+        </Link>
+        <Link className="dropdown-item" to="/Products">
           <img
             src="images/icons/user.png"
             alt=""
@@ -80,8 +80,8 @@ const Sidebar = () => {
             width={25}
           />
           Products
-        </a>
-        <a className="dropdown-item" href="/Property">
+        </Link>
+        <Link className="dropdown-item" to="/Property">
           <img
             src="images/icons/house.png"
             alt=""
@@ -89,9 +89,9 @@ const Sidebar = () => {
             width={25}
           />
           Properties
-        </a>
+        </Link>
         <hr className="dropdown-divider" />
-        <a className="dropdown-item" href="Verificationmain">
+        <Link className="dropdown-item" to="/Verificationmain">
           <img
             src="images/icons/verified.png"
             alt=""
@@ -99,8 +99,8 @@ const Sidebar = () => {
             className="mx-3"
           />{" "}
           Verification
-        </a>
-        <a className="dropdown-item" href="/Monetizeaccount">
+        </Link>
+        <Link className="dropdown-item" to="/Monetizeaccount">
           <img
             src="images/icons/money.png"
             className="mx-3"
@@ -108,9 +108,9 @@ const Sidebar = () => {
             width={25}
           />
           Monitization
-        </a>
+        </Link>
         <hr className="dropdown-divider" />
-        <a className="dropdown-item" href="/MarketPlace">
+        <Link className="dropdown-item" to="/MarketPlace">
           <img
             src="images/icons/convenience-store.png"
             alt=""
@@ -118,8 +118,8 @@ const Sidebar = () => {
             className="mx-3"
           />{" "}
           Marketplace
-        </a>
-        <a className="dropdown-item" href="#">
+        </Link>
+        <Link className="dropdown-item" to="#">
           <img
             src="images/icons/smartphone-call.png"
             className="mx-3"
@@ -127,8 +127,8 @@ const Sidebar = () => {
             width={25}
           />
           Device Setting
-        </a>
-        <a className="dropdown-item" href="#">
+        </Link>
+        <Link className="dropdown-item" to="#">
           <img
             src="images/icons/hotspot.png"
             className="mx-3"
@@ -136,7 +136,7 @@ const Sidebar = () => {
             width={25}
           />
           Updates
-        </a>
+        </Link>
         <hr className="dropdown-divider mb-3" />
       </div>
     </li>
@@ -315,10 +315,10 @@ const Sidebar = () => {
       <ul>
         <h5>Explore More</h5>
         <div className="help">
-          <a href="#">
+          <Link to="#">
             <i className="fa-regular fa-circle-question" />
             help{" "}
-          </a>
+          </Link>
         </div>
       </ul>
     </div>
@@ -326,28 +326,28 @@ const Sidebar = () => {
     <div className="extra-links">
       <ul>
         <li>
-          <a href="#">Refund Policy</a>
+          <Link to="#">Refund Policy</Link>
         </li>
         <li>
-          <a href="#">Termss OF Use</a>
+          <Link to="#">Termss OF Use</Link>
         </li>
         <li>
-          <a href="#">Privacy Policy</a>
+          <Link to="#">Privacy Policy</Link>
         </li>
         <li>
-          <a href="#">Affiliates</a>
+          <Link to="#">Affiliates</Link>
         </li>
         <li>
-          <a href="#">Acceptabel use Policy</a>
+          <Link to="#">Acceptabel use Policy</Link>
         </li>
         <li>
-          <a href="#">Cookie Policy</a>
+          <Link to="#">Cookie Policy</Link>
         </li>
         <li>
-          <a href="#">Language</a>
+          <Link to="#">Language</Link>
         </li>
         <li>
-          <a href="#">Monitization</a>
+          <Link to="#">Monitization</Link>
         </li>
       </ul>
     </div>
