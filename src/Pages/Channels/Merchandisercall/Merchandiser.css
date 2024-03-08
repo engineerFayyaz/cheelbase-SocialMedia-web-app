@@ -171,11 +171,6 @@ CB Room Video page 5 css
     }
 }
 
-
-.video-call{
-    margin-top: -60px;
-}
-
 .img-cb{
     background-image: url('/public/images/cb-room-bg.png');
     width: 100%;
@@ -194,7 +189,6 @@ body{
 }
 .video-main .col-md-8{
     width: 70% !important;
-    height: 50px;
 }
 .video-main .requesting-profile{
     border-bottom: 1px solid rgba(125, 145, 170, 1);
@@ -249,9 +243,10 @@ body{
 
 }
 .video-main .video-call-others-profile{
-    position: relative;
-    top: 12rem;
-    right: 27rem;
+    position: absolute;
+    top: 9rem;
+    left: 44rem;
+    width: fit-content;
 }
 
 .video-main .range-slider{
@@ -404,12 +399,16 @@ body{
 
 .video-main .rightbar-messenger .chatting .chat-input .emoji-icon{
  position: absolute;
- right: 17.5em;
+ right: 17em;
 }
 .video-main .rightbar-messenger .chatting .chat-input .share-icons{
     position: absolute;
-    right: 5em;
+    right: 4em;
     z-index: 2;
+
+    i{
+        margin-left: 5px;
+    }
 }
 
 

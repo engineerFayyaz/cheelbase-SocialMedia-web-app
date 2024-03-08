@@ -1,7 +1,15 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import "../Header2/Header2.css"
 
 const Header = () => {
+  const [localUser, setLocalUser] = useState(null);
+
+  useEffect(() => {
+    const localUserData = localStorage.getItem("user");
+    if (localUserData) {
+      setLocalUser(JSON.parse(localUserData));
+    }
+  }, []);
   return (
     <>
       <header>
@@ -104,18 +112,24 @@ const Header = () => {
             </div>
            
           </div>
-          <div className="user d-flex flex-row ">
-            <img
-              src="images/thubnail.jpeg"
-              alt="Chat 1"
-              className=" rounded-circle"
-              width={30}
-              height={30}
-            />
-            <label htmlFor="user" className="mt-1">
-              @marinaojak
-            </label>
-          </div>
+          <div className="user d-flex flex-row">
+                  {localUser ? (
+                    <>
+                      <img
+                        src={localUser.image}
+                        alt={localUser.fullname}
+                        className="rounded-circle"
+                        width={30}
+                        height={30}
+                      />
+                      <label htmlFor="user" className="mt-1">
+                        {localUser.fullname}
+                      </label>
+                    </>
+                  ) : (
+                    <span>No user logged in</span>
+                  )}
+                </div>
           <div className="lines">
             <li className="dropdown dropstart account-dropdown">
               <i
