@@ -1,14 +1,14 @@
 import React from "react";
-import Header2 from '../../../Componenets/Header2';
-import '../Merchandisercontinue/Merchandisercontinue.css';
+import Header2 from "../../../Componenets/Header2";
+import "../Merchandisercontinue/Merchandisercontinue.css";
 
 const Merchandisercontinue = () => {
-    return (
-        <>
-        <Header2/>
-        <div className="container-fluid video-main ">
+  return (
+    <>
+      <Header2 />
+      <div className="container-fluid video-main ">
         <div className="row">
-          <div className="col-md-8 p-3">
+          <div className=" col-lg-8 col-sm-12 p-3">
             <div className="name d-flex ">
               <img
                 src="../images/icons/Ellipse 360.png"
@@ -98,12 +98,18 @@ const Merchandisercontinue = () => {
                 <p className="ms-3">Product code</p>
               </div>
 
-
-                <div className="notification d-flex gap-2">
-                    <img src="../images/icons/Group 18772.png" className="img-notify" alt="" />
-                    <img src="../images/icons/Group 18773.png" className="img-notify" alt="" />
-                    
-                </div>
+              <div className="notification d-flex gap-2">
+                <img
+                  src="../images/icons/Group 18772.png"
+                  className="img-notify"
+                  alt=""
+                />
+                <img
+                  src="../images/icons/Group 18773.png"
+                  className="img-notify"
+                  alt=""
+                />
+              </div>
               <div className="ink-pen d-flex gap-3">
                 <a href="">
                   <img
@@ -181,7 +187,10 @@ const Merchandisercontinue = () => {
                 </div>
                 <div className="content ">
                   <h5>Jack</h5>
-                  <span className="col-8">Anyone is up for illustrations. I think there are less relatable images according to our brand. </span>
+                  <span className="col-8">
+                    Anyone is up for illustrations. I think there are less
+                    relatable images according to our brand.{" "}
+                  </span>
                   <div className="time text-end me-4 ">2:00pm</div>
                 </div>
               </div>
@@ -192,13 +201,12 @@ const Merchandisercontinue = () => {
                 </div>
                 <div className="content"></div>
               </div>
-             
             </div>
           </div>
         </div>
       </div>
-        </>
-    );
-}
+    </>
+  );
+};
 
 export default Merchandisercontinue;

@@ -1,7 +1,15 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Header from "../../Componenets/Header";
 import "../../Pages/VisitorProfile/visitor-profile.css"
 const VisitorProfile =()=>{
+  const [localUser, setLocalUser] = useState(null);
+
+  useEffect(() => {
+    const localUserData = localStorage.getItem("user");
+    if (localUserData) {
+      setLocalUser(JSON.parse(localUserData));
+    }
+  }, []);
     return(
         <>
         <Header/>
@@ -14,11 +22,19 @@ const VisitorProfile =()=>{
           src="../images/Rectangle 1128.png"
           alt=""
         />
-        <img
-          className="vist-img-position"
-          src="../images/Group 3465296.png"
-          alt=""
+        {localUser && (
+          <>
+           <img
+          className="vist-img-position rounded-5"
+          width={250}
+          height={250}
+          src={localUser.image}
+          alt={localUser.fullname}
+          
         />
+          </>
+        )}
+       
         <img className="vist-avtar" src="../images/Avatar.png" alt="" />
         <div className="btn-containter">
           <label className="btn-view" htmlFor="#">

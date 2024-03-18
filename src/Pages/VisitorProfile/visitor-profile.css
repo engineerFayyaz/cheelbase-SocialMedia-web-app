@@ -16,18 +16,20 @@
     width: 100%;
     height: 89%;
     position: absolute;
-
+    
 }
 
 .vist-img-position {
     position: relative;
     top: 13em;
+    left: 3rem;
 }
 
 .vist-avtar {
     position: relative;
     top: 13em;
     font-size: 20px;
+    left: 3rem;
 }
 
 .btn-containter {
