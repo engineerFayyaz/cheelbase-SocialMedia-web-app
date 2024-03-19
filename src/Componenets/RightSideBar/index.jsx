@@ -2,7 +2,7 @@ import React from "react";
 
 const RightSideBar = () => {
   return (
-    <div class="col-3 right-sidebar-section">
+    <div class="col-12 col-md-3  right-sidebar-section">
       <div class="continer-fluid">
         <div class="video" id="video">
           <button
