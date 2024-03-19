@@ -1,8 +1,41 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { db } from "../../../firebase/Config";
+import { collection, getDocs } from "@firebase/firestore";
 import Header from "../../../Componenets/Header";
 import'../Visitorvideo/Visitorvideo.css';
 
 const Visitorvideo = () => {
+  const [videos, setVideos] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchVideos = async () => {
+      try {
+        // Reference to the collection where video metadata is stored
+        const videoMetadataCollectionRef = collection(db, "visitorvideo");
+
+        // Get all documents from the collection
+        const querySnapshot = await getDocs(videoMetadataCollectionRef);
+
+        // Process each document and extract video metadata
+        const fetchedVideos = [];
+        querySnapshot.forEach((doc) => {
+          fetchedVideos.push({ id: doc.id, ...doc.data() });
+        });
+
+        setVideos(fetchedVideos);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching videos:", error);
+      }
+    };
+
+    fetchVideos();
+  }, []);
+
+if(loading){
+  return <p>Loading...</p>;
+}
     return(
         <>
         <Header/>
@@ -147,306 +180,35 @@ const Visitorvideo = () => {
     </div>
     {/* video section  */}
     {/* first line */}
-    <div className="row main-video-width d-flex mt-3">
-      <div className="col-lg-3 video-width ">
-        <img src="../images/Group 18849.png" width="300px" alt="" />
-      </div>
-      <div className="col-lg-3 video-width m-0 ">
-        <iframe
-          width={300}
-          height={170}
-          src="https://www.youtube.com/embed/8vo7yMTFOqA?si=pGgmHjRGU4dwjQtY"
-          title="YouTube video player"
-          frameBorder={0}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen=""
-        />
-        <div className="icon ">
-          <a className="under-line-bar" href="video-search-page.html">
-            <img src="../images/Ellipse 367.png" alt="" />
-            <h6>
-              This is my entire video for the next shouti ng of all time. hsnsn
-              snsns sjss usus sjsjsjsjs skaoan sns ssj.....{" "}
-            </h6>
-            <label htmlFor="">Cheelbase</label>
-            <p>709m view . 17 minutes ago</p>
-          </a>
+    <div className="row main-video-width d-flex justify-content-start  mt-3">
+      {videos.map((video) => (
+        <div key={video.id} className="col-lg-3">
+          <iframe
+            width={300}
+            height={170}
+            src={video.videoURL} // Assuming videoURL contains the YouTube embed URL
+            title="YouTube video player"
+            frameBorder={0}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+          <div className="content d-flex gap-2">
+          <div className="icon">
+            <a className="under-line-bar" href="video-search-page.html">
+              <img src={video.imageURL} alt=""className="rounded-circle object-fit-cover" />
+            </a>
+          </div>
+          <div className="detail">
+          <h6>{video.description}</h6>
+              <label htmlFor="" className="">{video.channelName}</label>
+              <p className="view"><span>709M views</span> <span>upload Time: 12.3</span></p>
+          </div>
+          </div>
         </div>
-      </div>
-      <div className="col-lg-3 video-width">
-        {" "}
-        <iframe
-          width={300}
-          height={170}
-          src="https://www.youtube.com/embed/8vo7yMTFOqA?si=pGgmHjRGU4dwjQtY"
-          title="YouTube video player"
-          frameBorder={0}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen=""
-        />
-        <div className="icon ">
-          <a className="under-line-bar" href="video-search-page.html">
-            <img src="../images/Ellipse 367.png" alt="" />
-            <h6>
-              This is my entire video for the next shouti ng of all time. hsnsn
-              snsns sjss usus sjsjsjsjs skaoan sns ssj.....{" "}
-            </h6>
-            <label htmlFor="">Cheelbase</label>
-            <p>709m view . 17 minutes ago</p>
-          </a>
-        </div>
-      </div>
-      <div className="col-lg-3 video-width">
-        {" "}
-        <iframe
-          width={300}
-          height={170}
-          src="https://www.youtube.com/embed/8vo7yMTFOqA?si=pGgmHjRGU4dwjQtY"
-          title="YouTube video player"
-          frameBorder={0}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen=""
-        />
-        <div className="icon ">
-          <a className="under-line-bar" href="video-search-page.html">
-            <img src="../images/Ellipse 367.png" alt="" />
-            <h6>
-              This is my entire video for the next shouti ng of all time. hsnsn
-              snsns sjss usus sjsjsjsjs skaoan sns ssj.....{" "}
-            </h6>
-            <label htmlFor="">Cheelbase</label>
-            <p>709m view . 17 minutes ago</p>
-          </a>
-        </div>
-      </div>
+      ))}
     </div>
     {/* first end */}
-    {/* 2nd start */}
-    <div className="row main-video-width d-flex mt-3">
-      <div className="col-lg-3 video-width m-0 ">
-        <iframe
-          width={300}
-          height={170}
-          src="https://www.youtube.com/embed/8vo7yMTFOqA?si=pGgmHjRGU4dwjQtY"
-          title="YouTube video player"
-          frameBorder={0}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen=""
-        />
-        <div className="icon ">
-          <a className="under-line-bar" href="video-search-page.html">
-            <img src="../images/Ellipse 367.png" alt="" />
-            <h6>
-              This is my entire video for the next shouti ng of all time. hsnsn
-              snsns sjss usus sjsjsjsjs skaoan sns ssj.....{" "}
-            </h6>
-            <label htmlFor="">Cheelbase</label>
-            <p>709m view . 17 minutes ago</p>
-          </a>
-        </div>
-      </div>
-      <div className="col-lg-3 video-width m-0 ">
-        <iframe
-          width={300}
-          height={170}
-          src="https://www.youtube.com/embed/8vo7yMTFOqA?si=pGgmHjRGU4dwjQtY"
-          title="YouTube video player"
-          frameBorder={0}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen=""
-        />
-        <div className="icon ">
-          <a className="under-line-bar" href="video-search-page.html">
-            <img src="../images/Ellipse 367.png" alt="" />
-            <h6>
-              This is my entire video for the next shouti ng of all time. hsnsn
-              snsns sjss usus sjsjsjsjs skaoan sns ssj.....{" "}
-            </h6>
-            <label htmlFor="">Cheelbase</label>
-            <p>709m view . 17 minutes ago</p>
-          </a>
-        </div>
-      </div>
-      <div className="col-lg-3 video-width m-0 ">
-        <iframe
-          width={300}
-          height={170}
-          src="https://www.youtube.com/embed/8vo7yMTFOqA?si=pGgmHjRGU4dwjQtY"
-          title="YouTube video player"
-          frameBorder={0}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen=""
-        />
-        <div className="icon ">
-          <a className="under-line-bar" href="video-search-page.html">
-            <img src="../images/Ellipse 367.png" alt="" />
-            <h6>
-              This is my entire video for the next shouti ng of all time. hsnsn
-              snsns sjss usus sjsjsjsjs skaoan sns ssj.....{" "}
-            </h6>
-            <label htmlFor="">Cheelbase</label>
-            <p>709m view . 17 minutes ago</p>
-          </a>
-        </div>
-      </div>
-      <div className="col-lg-3 video-width m-0 ">
-        <iframe
-          width={300}
-          height={170}
-          src="https://www.youtube.com/embed/8vo7yMTFOqA?si=pGgmHjRGU4dwjQtY"
-          title="YouTube video player"
-          frameBorder={0}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen=""
-        />
-        <div className="icon ">
-          <a className="under-line-bar" href="video-search-page.html">
-            <img src="../images/Ellipse 367.png" alt="" />
-            <h6>
-              This is my entire video for the next shouti ng of all time. hsnsn
-              snsns sjss usus sjsjsjsjs skaoan sns ssj.....{" "}
-            </h6>
-            <label htmlFor="">Cheelbase</label>
-            <p>709m view . 17 minutes ago</p>
-          </a>
-        </div>
-      </div>
-    </div>
-    {/* 2nd end */}
-    {/* 3rd start */}
-    <div className="row main-video-width d-flex mt-3">
-      <div className="col-lg-3 video-width m-0 ">
-        <iframe
-          width={300}
-          height={170}
-          src="https://www.youtube.com/embed/8vo7yMTFOqA?si=pGgmHjRGU4dwjQtY"
-          title="YouTube video player"
-          frameBorder={0}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen=""
-        />
-        <div className="icon ">
-          <img src="../images/Ellipse 367.png" alt="" />
-          <h6>
-            This is my entire video for the next shouti ng of all time. hsnsn
-            snsns sjss usus sjsjsjsjs skaoan sns ssj.....{" "}
-          </h6>
-          <label htmlFor="">Cheelbase</label>
-          <p>709m view . 17 minutes ago</p>
-        </div>
-      </div>
-      <div className="col-lg-3 video-width m-0 ">
-        <iframe
-          width={300}
-          height={170}
-          src="https://www.youtube.com/embed/8vo7yMTFOqA?si=pGgmHjRGU4dwjQtY"
-          title="YouTube video player"
-          frameBorder={0}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen=""
-        />
-        <div className="icon ">
-          <img src="../images/Ellipse 367.png" alt="" />
-          <h6>
-            This is my entire video for the next shouti ng of all time. hsnsn
-            snsns sjss usus sjsjsjsjs skaoan sns ssj.....{" "}
-          </h6>
-          <label htmlFor="">Cheelbase</label>
-          <p>709m view . 17 minutes ago</p>
-        </div>
-      </div>
-      <div className="col-lg-3 video-width ">
-        <img src="../images/Group 18484 (1).png" width="300px" alt="" />
-      </div>
-      <div className="col-lg-3 video-width m-0 ">
-        <iframe
-          width={300}
-          height={170}
-          src="https://www.youtube.com/embed/8vo7yMTFOqA?si=pGgmHjRGU4dwjQtY"
-          title="YouTube video player"
-          frameBorder={0}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen=""
-        />
-        <div className="icon ">
-          <img src="../images/Ellipse 367.png" alt="" />
-          <h6>
-            This is my entire video for the next shouti ng of all time. hsnsn
-            snsns sjss usus sjsjsjsjs skaoan sns ssj.....{" "}
-          </h6>
-          <label htmlFor="">Cheelbase</label>
-          <p>709m view . 17 minutes ago</p>
-        </div>
-      </div>
-    </div>
-    {/* 3rd end */}
-    {/* 4th start */}
-    <div className="row main-video-width d-flex mt-3">
-      <div className="col-lg-3 video-width m-0 ">
-        <iframe
-          width={300}
-          height={170}
-          src="https://www.youtube.com/embed/8vo7yMTFOqA?si=pGgmHjRGU4dwjQtY"
-          title="YouTube video player"
-          frameBorder={0}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen=""
-        />
-        <div className="icon ">
-          <img src="../images/Ellipse 367.png" alt="" />
-          <h6>
-            This is my entire video for the next shouti ng of all time. hsnsn
-            snsns sjss usus sjsjsjsjs skaoan sns ssj.....{" "}
-          </h6>
-          <label htmlFor="">Cheelbase</label>
-          <p>709m view . 17 minutes ago</p>
-        </div>
-      </div>
-      <div className="col-lg-3 video-width ">
-        <img src="../images/Group 18484 (1).png" width="300px" alt="" />
-      </div>
-      <div className="col-lg-3 video-width m-0 ">
-        <iframe
-          width={300}
-          height={170}
-          src="https://www.youtube.com/embed/8vo7yMTFOqA?si=pGgmHjRGU4dwjQtY"
-          title="YouTube video player"
-          frameBorder={0}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen=""
-        />
-        <div className="icon ">
-          <img src="../images/Ellipse 367.png" alt="" />
-          <h6>
-            This is my entire video for the next shouti ng of all time. hsnsn
-            snsns sjss usus sjsjsjsjs skaoan sns ssj.....{" "}
-          </h6>
-          <label htmlFor="">Cheelbase</label>
-          <p>709m view . 17 minutes ago</p>
-        </div>
-      </div>
-      <div className="col-lg-3 video-width m-0 ">
-        <iframe
-          width={300}
-          height={170}
-          src="https://www.youtube.com/embed/8vo7yMTFOqA?si=pGgmHjRGU4dwjQtY"
-          title="YouTube video player"
-          frameBorder={0}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen=""
-        />
-        <div className="icon ">
-          <img src="../images/Ellipse 367.png" alt="" />
-          <h6>
-            This is my entire video for the next shouti ng of all time. hsnsn
-            snsns sjss usus sjsjsjsjs skaoan sns ssj.....{" "}
-          </h6>
-          <label htmlFor="">Cheelbase</label>
-          <p>709m view . 17 minutes ago</p>
-        </div>
-      </div>
-    </div>
-    {/* 4th end */}
+
     {/* 5th start */}
     <div className="row main-video-width d-flex mt-3">
       <div className="col-lg-3 video-width ">

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Sidebar = () => {
   return (
     <>
-      <div className="col-md-3 left-sidebar-main ps-3">
+      <div className="col-12 col-md-3 left-sidebar-main ps-3">
   <div className="searchbar d-flex align-items-center mt-0">
     <li className="dropdown account-dropdown">
       <i

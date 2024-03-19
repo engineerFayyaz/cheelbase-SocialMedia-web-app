@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navigate } from "react-router";
 
 import { AuthProvider } from "./AuthContext";
+import Dashboard from "./Pages/AdminDashboard";
 // import HomePage from "./Pages/Home";
 // import Home from "./Pages/Home";
 // import NotFound from "./Pages/NotFound";
@@ -376,6 +377,7 @@ const ProjectRoutes = () => {
             <Route path="/Compaignplacement" element={<Compaignplacement />} />
             <Route path="/Compaignlast" element={<Compaignlast />} />
             <Route path="/Statussingle" element={<Statussingle />} />
+            <Route path="/Dashboard" element={<Dashboard />} />
           </Routes>
         </AuthProvider>
       </Router>

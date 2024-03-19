@@ -3,7 +3,7 @@ import React from "react";
 const Stories = () => {
   return (
     <>
-     <div className="col-6 center-main">
+     <div className="col-12 col-lg-6 center-main">
   {/* /// stories main starts  */}
   <div className=" stories-main">
     <div className="stories-container">
