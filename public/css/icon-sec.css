@@ -1,5 +1,5 @@
 .center-main{
-    width: 60%;
+    width: 60% !important;
     padding-top: 5px;
 }
 .icon-section{
@@ -30,4 +30,10 @@
     color: #121111;
     font-weight: 600;
     line-height: 25px;
+}
+
+@media (max-width:470px) {
+    .center-main{
+        width: 100% !important;
+    }
 }
